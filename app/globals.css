@@ -1,0 +1,154 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.985 0.004 260);
+  --foreground: oklch(0.20 0.035 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.20 0.035 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.035 255);
+  --primary: oklch(0.57 0.22 292);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.965 0.012 255);
+  --secondary-foreground: oklch(0.25 0.04 255);
+  --muted: oklch(0.965 0.012 255);
+  --muted-foreground: oklch(0.48 0.035 255);
+  --accent: oklch(0.66 0.18 160);
+  --accent-foreground: oklch(0.20 0.035 255);
+  --destructive: oklch(0.62 0.21 25);
+  --border: oklch(0.90 0.018 255);
+  --input: oklch(0.88 0.018 255);
+  --ring: oklch(0.57 0.22 292);
+  --chart-1: oklch(0.57 0.22 292);
+  --chart-2: oklch(0.66 0.18 160);
+  --chart-3: oklch(0.68 0.17 75);
+  --chart-4: oklch(0.63 0.20 245);
+  --chart-5: oklch(0.62 0.21 25);
+  --radius: 0.75rem;
+
+  /* Reference dashboard: deep navy navigation */
+  --sidebar: oklch(0.18 0.055 255);
+  --sidebar-foreground: oklch(0.96 0.012 255);
+  --sidebar-primary: oklch(0.57 0.22 292);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.25 0.065 255);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.28 0.055 255);
+  --sidebar-ring: oklch(0.57 0.22 292);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:
+      radial-gradient(circle at 75% -10%, oklch(0.97 0.025 292 / 0.55), transparent 34rem),
+      var(--background);
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  ::selection {
+    background: oklch(0.57 0.22 292 / 0.18);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.78 0.025 255);
+    border-radius: 999px;
+  }
+}
+
+/* Make the existing product feel like the supplied light reference without
+   changing the application's data/API behavior. */
+.font-mono {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+.bg-card {
+  box-shadow: 0 1px 3px oklch(0.25 0.04 255 / 0.06), 0 8px 24px oklch(0.25 0.04 255 / 0.035);
+}
+
+aside.bg-sidebar {
+  box-shadow: 8px 0 28px oklch(0.12 0.04 255 / 0.10);
+}
+
+[data-dashboard-card] {
+  box-shadow: 0 1px 3px oklch(0.25 0.04 255 / 0.06), 0 10px 28px oklch(0.25 0.04 255 / 0.035);
+}
+
+@media (max-width: 1024px) {
+  aside.bg-sidebar {
+    box-shadow: 14px 0 40px oklch(0.08 0.03 255 / 0.22);
+  }
+}

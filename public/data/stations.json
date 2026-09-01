@@ -1,0 +1,704 @@
+{
+  "Indian Railways Stations Master": [
+    {
+      "station_id": "STN-001",
+      "station_code": "NDLS",
+      "station_name": "New Delhi",
+      "railway_division": "Delhi (DLI)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-002",
+      "station_code": "DLI",
+      "station_name": "Old Delhi Junction",
+      "railway_division": "Delhi (DLI)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-003",
+      "station_code": "NZM",
+      "station_name": "Hazrat Nizamuddin",
+      "railway_division": "Delhi (DLI)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-004",
+      "station_code": "ANVT",
+      "station_name": "Anand Vihar Terminal",
+      "railway_division": "Delhi (DLI)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-005",
+      "station_code": "CSMT",
+      "station_name": "Chhatrapati Shivaji Maharaj Terminus",
+      "railway_division": "Mumbai CR",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-006",
+      "station_code": "DR",
+      "station_name": "Dadar Central",
+      "railway_division": "Mumbai CR",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-007",
+      "station_code": "LTT",
+      "station_name": "Lokmanya Tilak Terminus",
+      "railway_division": "Mumbai CR",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-008",
+      "station_code": "KYN",
+      "station_name": "Kalyan Junction",
+      "railway_division": "Mumbai CR",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-009",
+      "station_code": "PUNE",
+      "station_name": "Pune Junction",
+      "railway_division": "Pune (PA)",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-010",
+      "station_code": "NGP",
+      "station_name": "Nagpur Junction",
+      "railway_division": "Nagpur (NGP)",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-011",
+      "station_code": "BSL",
+      "station_name": "Bhusaval Junction",
+      "railway_division": "Bhusaval (BSL)",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-012",
+      "station_code": "SUR",
+      "station_name": "Solapur",
+      "railway_division": "Solapur (SUR)",
+      "railway_zone": "Central Railway (CR)"
+    },
+    {
+      "station_id": "STN-013",
+      "station_code": "MMCT",
+      "station_name": "Mumbai Central",
+      "railway_division": "Mumbai WR",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-014",
+      "station_code": "BDTS",
+      "station_name": "Bandra Terminus",
+      "railway_division": "Mumbai WR",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-015",
+      "station_code": "ADI",
+      "station_name": "Ahmedabad Junction",
+      "railway_division": "Ahmedabad (ADI)",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-016",
+      "station_code": "BRC",
+      "station_name": "Vadodara Junction",
+      "railway_division": "Vadodara (BRC)",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-017",
+      "station_code": "ST",
+      "station_name": "Surat",
+      "railway_division": "Mumbai WR",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-018",
+      "station_code": "RTM",
+      "station_name": "Ratlam Junction",
+      "railway_division": "Ratlam (RTM)",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-019",
+      "station_code": "RJMT",
+      "station_name": "Rajkot Junction",
+      "railway_division": "Rajkot (RJT)",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-020",
+      "station_code": "BVP",
+      "station_name": "Bhavnagar Terminus",
+      "railway_division": "Bhavnagar (BVP)",
+      "railway_zone": "Western Railway (WR)"
+    },
+    {
+      "station_id": "STN-021",
+      "station_code": "HWH",
+      "station_name": "Howrah Junction",
+      "railway_division": "Howrah (HWH)",
+      "railway_zone": "Eastern Railway (ER)"
+    },
+    {
+      "station_id": "STN-022",
+      "station_code": "SDAH",
+      "station_name": "Sealdah",
+      "railway_division": "Sealdah (SDAH)",
+      "railway_zone": "Eastern Railway (ER)"
+    },
+    {
+      "station_id": "STN-023",
+      "station_code": "KOAA",
+      "station_name": "Kolkata Terminal",
+      "railway_division": "Sealdah (SDAH)",
+      "railway_zone": "Eastern Railway (ER)"
+    },
+    {
+      "station_id": "STN-024",
+      "station_code": "ASN",
+      "station_name": "Asansol Junction",
+      "railway_division": "Asansol (ASN)",
+      "railway_zone": "Eastern Railway (ER)"
+    },
+    {
+      "station_id": "STN-025",
+      "station_code": "MLDT",
+      "station_name": "Malda Town",
+      "railway_division": "Malda (MLDT)",
+      "railway_zone": "Eastern Railway (ER)"
+    },
+    {
+      "station_id": "STN-026",
+      "station_code": "MAS",
+      "station_name": "MGR Chennai Central",
+      "railway_division": "Chennai (MAS)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-027",
+      "station_code": "MS",
+      "station_name": "Chennai Egmore",
+      "railway_division": "Chennai (MAS)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-028",
+      "station_code": "CBE",
+      "station_name": "Coimbatore Junction",
+      "railway_division": "Salem (SA)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-029",
+      "station_code": "MDU",
+      "station_name": "Madurai Junction",
+      "railway_division": "Madurai (MDU)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-030",
+      "station_code": "TPJ",
+      "station_name": "Tiruchchirappalli Junction",
+      "railway_division": "Tiruchchirappalli (TPJ)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-031",
+      "station_code": "TVC",
+      "station_name": "Thiruvananthapuram Central",
+      "railway_division": "Thiruvananthapuram (TVC)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-032",
+      "station_code": "ERS",
+      "station_name": "Ernakulam Junction (South)",
+      "railway_division": "Thiruvananthapuram (TVC)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-033",
+      "station_code": "CLT",
+      "station_name": "Kozhikode Main",
+      "railway_division": "Palakkad (PGT)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-034",
+      "station_code": "PGT",
+      "station_name": "Palakkad Junction",
+      "railway_division": "Palakkad (PGT)",
+      "railway_zone": "Southern Railway (SR)"
+    },
+    {
+      "station_id": "STN-035",
+      "station_code": "SBC",
+      "station_name": "KSR Bengaluru City Junction",
+      "railway_division": "Bengaluru (SBC)",
+      "railway_zone": "South Western Railway (SWR)"
+    },
+    {
+      "station_id": "STN-036",
+      "station_code": "YPR",
+      "station_name": "Yesvantpur Junction",
+      "railway_division": "Bengaluru (SBC)",
+      "railway_zone": "South Western Railway (SWR)"
+    },
+    {
+      "station_id": "STN-037",
+      "station_code": "UBL",
+      "station_name": "SSS Hubballi Junction",
+      "railway_division": "Hubballi (UBL)",
+      "railway_zone": "South Western Railway (SWR)"
+    },
+    {
+      "station_id": "STN-038",
+      "station_code": "MYS",
+      "station_name": "Mysuru Junction",
+      "railway_division": "Mysuru (MYS)",
+      "railway_zone": "South Western Railway (SWR)"
+    },
+    {
+      "station_id": "STN-039",
+      "station_code": "SC",
+      "station_name": "Secunderabad Junction",
+      "railway_division": "Secunderabad (SC)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-040",
+      "station_code": "HYB",
+      "station_name": "Hyderabad Deccan (Nampally)",
+      "railway_division": "Secunderabad (SC)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-041",
+      "station_code": "BZA",
+      "station_name": "Vijayawada Junction",
+      "railway_division": "Vijayawada (BZA)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-042",
+      "station_code": "GNT",
+      "station_name": "Guntur Junction",
+      "railway_division": "Guntur (GNT)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-043",
+      "station_code": "TPTY",
+      "station_name": "Tirupati Main",
+      "railway_division": "Guntakal (GTL)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-044",
+      "station_code": "GTL",
+      "station_name": "Guntakal Junction",
+      "railway_division": "Guntakal (GTL)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-045",
+      "station_code": "NED",
+      "station_name": "Hazur Sahib Nanded",
+      "railway_division": "Nanded (NED)",
+      "railway_zone": "South Central Railway (SCR)"
+    },
+    {
+      "station_id": "STN-046",
+      "station_code": "CNB",
+      "station_name": "Kanpur Central",
+      "railway_division": "Prayagraj (PRYJ)",
+      "railway_zone": "North Central Railway (NCR)"
+    },
+    {
+      "station_id": "STN-047",
+      "station_code": "PRYJ",
+      "station_name": "Prayagraj Junction",
+      "railway_division": "Prayagraj (PRYJ)",
+      "railway_zone": "North Central Railway (NCR)"
+    },
+    {
+      "station_id": "STN-048",
+      "station_code": "AGC",
+      "station_name": "Agra Cantt",
+      "railway_division": "Agra (AGC)",
+      "railway_zone": "North Central Railway (NCR)"
+    },
+    {
+      "station_id": "STN-049",
+      "station_code": "GWL",
+      "station_name": "Gwalior Junction",
+      "railway_division": "Jhansi (JHS)",
+      "railway_zone": "North Central Railway (NCR)"
+    },
+    {
+      "station_id": "STN-050",
+      "station_code": "VGLJ",
+      "station_name": "Virangana Lakshmibai Jhansi",
+      "railway_division": "Jhansi (JHS)",
+      "railway_zone": "North Central Railway (NCR)"
+    },
+    {
+      "station_id": "STN-051",
+      "station_code": "PNBE",
+      "station_name": "Patna Junction",
+      "railway_division": "Danapur (DNR)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-052",
+      "station_code": "DNR",
+      "station_name": "Danapur",
+      "railway_division": "Danapur (DNR)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-053",
+      "station_code": "GAYA",
+      "station_name": "Gaya Junction",
+      "railway_division": "Pt. Deen Dayal Upadhyaya (DDU)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-054",
+      "station_code": "DDU",
+      "station_name": "Pt. Deen Dayal Upadhyaya Junction",
+      "railway_division": "Pt. Deen Dayal Upadhyaya (DDU)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-055",
+      "station_code": "MFP",
+      "station_name": "Muzaffarpur Junction",
+      "railway_division": "Sonpur (SEE)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-056",
+      "station_code": "DHN",
+      "station_name": "Dhanbad Junction",
+      "railway_division": "Dhanbad (DHN)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-057",
+      "station_code": "SPJ",
+      "station_name": "Samastipur Junction",
+      "railway_division": "Samastipur (SPJ)",
+      "railway_zone": "East Central Railway (ECR)"
+    },
+    {
+      "station_id": "STN-058",
+      "station_code": "BBS",
+      "station_name": "Bhubaneswar",
+      "railway_division": "Khurda Road (KUR)",
+      "railway_zone": "East Coast Railway (ECoR)"
+    },
+    {
+      "station_id": "STN-059",
+      "station_code": "PURI",
+      "station_name": "Puri",
+      "railway_division": "Khurda Road (KUR)",
+      "railway_zone": "East Coast Railway (ECoR)"
+    },
+    {
+      "station_id": "STN-060",
+      "station_code": "CTC",
+      "station_name": "Cuttack Junction",
+      "railway_division": "Khurda Road (KUR)",
+      "railway_zone": "East Coast Railway (ECoR)"
+    },
+    {
+      "station_id": "STN-061",
+      "station_code": "VSKP",
+      "station_name": "Visakhapatnam Junction",
+      "railway_division": "Waltair (WAT)",
+      "railway_zone": "East Coast Railway (ECoR)"
+    },
+    {
+      "station_id": "STN-062",
+      "station_code": "SBP",
+      "station_name": "Sambalpur Junction",
+      "railway_division": "Sambalpur (SBP)",
+      "railway_zone": "East Coast Railway (ECoR)"
+    },
+    {
+      "station_id": "STN-063",
+      "station_code": "GKP",
+      "station_name": "Gorakhpur Junction",
+      "railway_division": "Lucknow NER (LJN)",
+      "railway_zone": "North Eastern Railway (NER)"
+    },
+    {
+      "station_id": "STN-064",
+      "station_code": "LJN",
+      "station_name": "Lucknow Junction NER",
+      "railway_division": "Lucknow NER (LJN)",
+      "railway_zone": "North Eastern Railway (NER)"
+    },
+    {
+      "station_id": "STN-065",
+      "station_code": "LKO",
+      "station_name": "Lucknow Charbagh NR",
+      "railway_division": "Lucknow NR (LKO)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-066",
+      "station_code": "BSB",
+      "station_name": "Varanasi Junction",
+      "railway_division": "Lucknow NR (LKO)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-067",
+      "station_code": "CPR",
+      "station_name": "Chhapra Junction",
+      "railway_division": "Varanasi (BSB)",
+      "railway_zone": "North Eastern Railway (NER)"
+    },
+    {
+      "station_id": "STN-068",
+      "station_code": "IZN",
+      "station_name": "Izzatnagar",
+      "railway_division": "Izzatnagar (IZN)",
+      "railway_zone": "North Eastern Railway (NER)"
+    },
+    {
+      "station_id": "STN-069",
+      "station_code": "GHY",
+      "station_name": "Guwahati",
+      "railway_division": "Lumding (LMG)",
+      "railway_zone": "Northeast Frontier Railway (NFR)"
+    },
+    {
+      "station_id": "STN-070",
+      "station_code": "NJP",
+      "station_name": "New Jalpaiguri Junction",
+      "railway_division": "Katihar (KIR)",
+      "railway_zone": "Northeast Frontier Railway (NFR)"
+    },
+    {
+      "station_id": "STN-071",
+      "station_code": "KIR",
+      "station_name": "Katihar Junction",
+      "railway_division": "Katihar (KIR)",
+      "railway_zone": "Northeast Frontier Railway (NFR)"
+    },
+    {
+      "station_id": "STN-072",
+      "station_code": "APDJ",
+      "station_name": "Alipurduar Junction",
+      "railway_division": "Alipurduar (APDJ)",
+      "railway_zone": "Northeast Frontier Railway (NFR)"
+    },
+    {
+      "station_id": "STN-073",
+      "station_code": "DBRG",
+      "station_name": "Dibrugarh",
+      "railway_division": "Tinsukia (TSK)",
+      "railway_zone": "Northeast Frontier Railway (NFR)"
+    },
+    {
+      "station_id": "STN-074",
+      "station_code": "RNG",
+      "station_name": "Rangiya Junction",
+      "railway_division": "Rangiya (RNY)",
+      "railway_zone": "Northeast Frontier Railway (NFR)"
+    },
+    {
+      "station_id": "STN-075",
+      "station_code": "JP",
+      "station_name": "Jaipur Junction",
+      "railway_division": "Jaipur (JP)",
+      "railway_zone": "North Western Railway (NWR)"
+    },
+    {
+      "station_id": "STN-076",
+      "station_code": "JU",
+      "station_name": "Jodhpur Junction",
+      "railway_division": "Jodhpur (JU)",
+      "railway_zone": "North Western Railway (NWR)"
+    },
+    {
+      "station_id": "STN-077",
+      "station_code": "AII",
+      "station_name": "Ajmer Junction",
+      "railway_division": "Ajmer (AII)",
+      "railway_zone": "North Western Railway (NWR)"
+    },
+    {
+      "station_id": "STN-078",
+      "station_code": "BKN",
+      "station_name": "Bikaner Junction",
+      "railway_division": "Bikaner (BKN)",
+      "railway_zone": "North Western Railway (NWR)"
+    },
+    {
+      "station_id": "STN-079",
+      "station_code": "UDZ",
+      "station_name": "Udaipur City",
+      "railway_division": "Ajmer (AII)",
+      "railway_zone": "North Western Railway (NWR)"
+    },
+    {
+      "station_id": "STN-080",
+      "station_code": "KGP",
+      "station_name": "Kharagpur Junction",
+      "railway_division": "Kharagpur (KGP)",
+      "railway_zone": "South Eastern Railway (SER)"
+    },
+    {
+      "station_id": "STN-081",
+      "station_code": "SHM",
+      "station_name": "Shalimar",
+      "railway_division": "Kharagpur (KGP)",
+      "railway_zone": "South Eastern Railway (SER)"
+    },
+    {
+      "station_id": "STN-082",
+      "station_code": "TATA",
+      "station_name": "Tatanagar Junction",
+      "railway_division": "Chakradharpur (CKP)",
+      "railway_zone": "South Eastern Railway (SER)"
+    },
+    {
+      "station_id": "STN-083",
+      "station_code": "RNC",
+      "station_name": "Ranchi Junction",
+      "railway_division": "Ranchi (RNC)",
+      "railway_zone": "South Eastern Railway (SER)"
+    },
+    {
+      "station_id": "STN-084",
+      "station_code": "ADRA",
+      "station_name": "Adra Junction",
+      "railway_division": "Adra (ADRA)",
+      "railway_zone": "South Eastern Railway (SER)"
+    },
+    {
+      "station_id": "STN-085",
+      "station_code": "BSP",
+      "station_name": "Bilaspur Junction",
+      "railway_division": "Bilaspur (BSP)",
+      "railway_zone": "South East Central Railway (SECR)"
+    },
+    {
+      "station_id": "STN-086",
+      "station_code": "R",
+      "station_name": "Raipur Junction",
+      "railway_division": "Raipur (R)",
+      "railway_zone": "South East Central Railway (SECR)"
+    },
+    {
+      "station_id": "STN-087",
+      "station_code": "DURG",
+      "station_name": "Durg Junction",
+      "railway_division": "Raipur (R)",
+      "railway_zone": "South East Central Railway (SECR)"
+    },
+    {
+      "station_id": "STN-088",
+      "station_code": "NGP-SECR",
+      "station_name": "Nagpur SECR (Motibagh)",
+      "railway_division": "Nagpur SECR",
+      "railway_zone": "South East Central Railway (SECR)"
+    },
+    {
+      "station_id": "STN-089",
+      "station_code": "JBP",
+      "station_name": "Jabalpur Junction",
+      "railway_division": "Jabalpur (JBP)",
+      "railway_zone": "West Central Railway (WCR)"
+    },
+    {
+      "station_id": "STN-090",
+      "station_code": "BPL",
+      "station_name": "Bhopal Junction",
+      "railway_division": "Bhopal (BPL)",
+      "railway_zone": "West Central Railway (WCR)"
+    },
+    {
+      "station_id": "STN-091",
+      "station_code": "RKMP",
+      "station_name": "Rani Kamalapati (Habibganj)",
+      "railway_division": "Bhopal (BPL)",
+      "railway_zone": "West Central Railway (WCR)"
+    },
+    {
+      "station_id": "STN-092",
+      "station_code": "KOTA",
+      "station_name": "Kota Junction",
+      "railway_division": "Kota (KOTA)",
+      "railway_zone": "West Central Railway (WCR)"
+    },
+    {
+      "station_id": "STN-093",
+      "station_code": "ET",
+      "station_name": "Itarsi Junction",
+      "railway_division": "Bhopal (BPL)",
+      "railway_zone": "West Central Railway (WCR)"
+    },
+    {
+      "station_id": "STN-094",
+      "station_code": "UMB",
+      "station_name": "Ambala Cantt Junction",
+      "railway_division": "Ambala (UMB)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-095",
+      "station_code": "ASR",
+      "station_name": "Amritsar Junction",
+      "railway_division": "Firozpur (FZR)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-096",
+      "station_code": "JAT",
+      "station_name": "Jammu Tawi",
+      "railway_division": "Firozpur (FZR)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-097",
+      "station_code": "SVDK",
+      "station_name": "Shri Mata Vaishno Devi Katra",
+      "railway_division": "Firozpur (FZR)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-098",
+      "station_code": "CDG",
+      "station_name": "Chandigarh Junction",
+      "railway_division": "Ambala (UMB)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-099",
+      "station_code": "MB",
+      "station_name": "Moradabad Junction",
+      "railway_division": "Moradabad (MB)",
+      "railway_zone": "Northern Railway (NR)"
+    },
+    {
+      "station_id": "STN-100",
+      "station_code": "DDN",
+      "station_name": "Dehradun",
+      "railway_division": "Moradabad (MB)",
+      "railway_zone": "Northern Railway (NR)"
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "IR Route Section Master": [
+    {
+      "section_id": "SEC-001",
+      "from_station": "NDLS (New Delhi)",
+      "to_station": "GZB (Ghaziabad)",
+      "distance": 25.6,
+      "track_traction_type": "Quadruple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-002",
+      "from_station": "GZB (Ghaziabad)",
+      "to_station": "CNB (Kanpur Central)",
+      "distance": 414.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-003",
+      "from_station": "CNB (Kanpur Central)",
+      "to_station": "PRYJ (Prayagraj Jn)",
+      "distance": 194.5,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-004",
+      "from_station": "PRYJ (Prayagraj Jn)",
+      "to_station": "DDU (Pt. Deen Dayal Upadhyaya)",
+      "distance": 152.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-005",
+      "from_station": "DDU (Pt. Deen Dayal Upadhyaya)",
+      "to_station": "PNBE (Patna Jn)",
+      "distance": 211.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-006",
+      "from_station": "PNBE (Patna Jn)",
+      "to_station": "GHY (Guwahati)",
+      "distance": 864,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-007",
+      "from_station": "DDU (Pt. Deen Dayal Upadhyaya)",
+      "to_station": "GAYA (Gaya Jn)",
+      "distance": 204.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-008",
+      "from_station": "GAYA (Gaya Jn)",
+      "to_station": "DHN (Dhanbad Jn)",
+      "distance": 200.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-009",
+      "from_station": "DHN (Dhanbad Jn)",
+      "to_station": "ASN (Asansol Jn)",
+      "distance": 58.4,
+      "track_traction_type": "Triple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-010",
+      "from_station": "ASN (Asansol Jn)",
+      "to_station": "HWH (Howrah Jn)",
+      "distance": 199.8,
+      "track_traction_type": "Quadruple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-011",
+      "from_station": "NDLS (New Delhi)",
+      "to_station": "MTJ (Mathura Jn)",
+      "distance": 141.2,
+      "track_traction_type": "Triple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-012",
+      "from_station": "MTJ (Mathura Jn)",
+      "to_station": "AGC (Agra Cantt)",
+      "distance": 53.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-013",
+      "from_station": "AGC (Agra Cantt)",
+      "to_station": "GWL (Gwalior Jn)",
+      "distance": 118.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-014",
+      "from_station": "GWL (Gwalior Jn)",
+      "to_station": "VGLJ (Virangana Lakshmibai Jhansi)",
+      "distance": 97.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-015",
+      "from_station": "VGLJ (Virangana Lakshmibai Jhansi)",
+      "to_station": "BPL (Bhopal Jn)",
+      "distance": 291.5,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-016",
+      "from_station": "BPL (Bhopal Jn)",
+      "to_station": "ET (Itarsi Jn)",
+      "distance": 92.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-017",
+      "from_station": "ET (Itarsi Jn)",
+      "to_station": "NGP (Nagpur Jn)",
+      "distance": 298.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-018",
+      "from_station": "NGP (Nagpur Jn)",
+      "to_station": "BPQ (Balharshah)",
+      "distance": 208.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-019",
+      "from_station": "BPQ (Balharshah)",
+      "to_station": "KZJ (Kazipet Jn)",
+      "distance": 234.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-020",
+      "from_station": "KZJ (Kazipet Jn)",
+      "to_station": "SC (Secunderabad Jn)",
+      "distance": 131.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-021",
+      "from_station": "KZJ (Kazipet Jn)",
+      "to_station": "BZA (Vijayawada Jn)",
+      "distance": 216.9,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-022",
+      "from_station": "BZA (Vijayawada Jn)",
+      "to_station": "GDR (Gudur Jn)",
+      "distance": 293.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-023",
+      "from_station": "GDR (Gudur Jn)",
+      "to_station": "MAS (Chennai Central)",
+      "distance": 138.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-024",
+      "from_station": "MMCT (Mumbai Central)",
+      "to_station": "BVI (Borivali)",
+      "distance": 29.8,
+      "track_traction_type": "Quadruple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-025",
+      "from_station": "BVI (Borivali)",
+      "to_station": "VR (Virar)",
+      "distance": 30.2,
+      "track_traction_type": "Quadruple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-026",
+      "from_station": "VR (Virar)",
+      "to_station": "ST (Surat)",
+      "distance": 230.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-027",
+      "from_station": "ST (Surat)",
+      "to_station": "BRC (Vadodara Jn)",
+      "distance": 129.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-028",
+      "from_station": "BRC (Vadodara Jn)",
+      "to_station": "ADI (Ahmedabad Jn)",
+      "distance": 99.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-029",
+      "from_station": "BRC (Vadodara Jn)",
+      "to_station": "RTM (Ratlam Jn)",
+      "distance": 260.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-030",
+      "from_station": "RTM (Ratlam Jn)",
+      "to_station": "KOTA (Kota Jn)",
+      "distance": 266.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-031",
+      "from_station": "KOTA (Kota Jn)",
+      "to_station": "SWM (Sawai Madhopur)",
+      "distance": 107.9,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-032",
+      "from_station": "SWM (Sawai Madhopur)",
+      "to_station": "MTJ (Mathura Jn)",
+      "distance": 216.5,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-033",
+      "from_station": "CSMT (Chhatrapati Shivaji Maharaj T)",
+      "to_station": "KYN (Kalyan Jn)",
+      "distance": 53.4,
+      "track_traction_type": "Six Line (Electrified Corridor)"
+    },
+    {
+      "section_id": "SEC-034",
+      "from_station": "KYN (Kalyan Jn)",
+      "to_station": "IGP (Igatpuri)",
+      "distance": 82.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-035",
+      "from_station": "IGP (Igatpuri)",
+      "to_station": "BSL (Bhusaval Jn)",
+      "distance": 307.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-036",
+      "from_station": "BSL (Bhusaval Jn)",
+      "to_station": "NGP (Nagpur Jn)",
+      "distance": 392.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-037",
+      "from_station": "KYN (Kalyan Jn)",
+      "to_station": "KJT (Karjat)",
+      "distance": 44.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-038",
+      "from_station": "KJT (Karjat)",
+      "to_station": "LNL (Lonavala)",
+      "distance": 28.5,
+      "track_traction_type": "Triple Line (Ghat Section)"
+    },
+    {
+      "section_id": "SEC-039",
+      "from_station": "LNL (Lonavala)",
+      "to_station": "PUNE (Pune Jn)",
+      "distance": 63.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-040",
+      "from_station": "PUNE (Pune Jn)",
+      "to_station": "SUR (Solapur)",
+      "distance": 262.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-041",
+      "from_station": "SUR (Solapur)",
+      "to_station": "WADI (Wadi Jn)",
+      "distance": 150.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-042",
+      "from_station": "WADI (Wadi Jn)",
+      "to_station": "GTL (Guntakal Jn)",
+      "distance": 228.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-043",
+      "from_station": "GTL (Guntakal Jn)",
+      "to_station": "RU (Renigunta Jn)",
+      "distance": 309.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-044",
+      "from_station": "RU (Renigunta Jn)",
+      "to_station": "MAS (Chennai Central)",
+      "distance": 141,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-045",
+      "from_station": "MAS (Chennai Central)",
+      "to_station": "AJJ (Arakkonam Jn)",
+      "distance": 68.6,
+      "track_traction_type": "Quadruple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-046",
+      "from_station": "AJJ (Arakkonam Jn)",
+      "to_station": "KPD (Katpadi Jn)",
+      "distance": 61.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-047",
+      "from_station": "KPD (Katpadi Jn)",
+      "to_station": "JTJ (Jolarpettai Jn)",
+      "distance": 84.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-048",
+      "from_station": "JTJ (Jolarpettai Jn)",
+      "to_station": "SBC (Bengaluru City)",
+      "distance": 145.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-049",
+      "from_station": "JTJ (Jolarpettai Jn)",
+      "to_station": "SA (Salem Jn)",
+      "distance": 120.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-050",
+      "from_station": "SA (Salem Jn)",
+      "to_station": "ED (Erode Jn)",
+      "distance": 59.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-051",
+      "from_station": "ED (Erode Jn)",
+      "to_station": "CBE (Coimbatore Jn)",
+      "distance": 100.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-052",
+      "from_station": "CBE (Coimbatore Jn)",
+      "to_station": "PGT (Palakkad Jn)",
+      "distance": 55.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-053",
+      "from_station": "PGT (Palakkad Jn)",
+      "to_station": "SRR (Shoranur Jn)",
+      "distance": 44.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-054",
+      "from_station": "SRR (Shoranur Jn)",
+      "to_station": "ERS (Ernakulam Jn)",
+      "distance": 107.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-055",
+      "from_station": "ERS (Ernakulam Jn)",
+      "to_station": "TVC (Thiruvananthapuram Central)",
+      "distance": 206.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-056",
+      "from_station": "HWH (Howrah Jn)",
+      "to_station": "KGP (Kharagpur Jn)",
+      "distance": 115.1,
+      "track_traction_type": "Triple Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-057",
+      "from_station": "KGP (Kharagpur Jn)",
+      "to_station": "BLS (Balasore)",
+      "distance": 116.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-058",
+      "from_station": "BLS (Balasore)",
+      "to_station": "BBS (Bhubaneswar)",
+      "distance": 206.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-059",
+      "from_station": "BBS (Bhubaneswar)",
+      "to_station": "KUR (Khurda Road Jn)",
+      "distance": 19.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-060",
+      "from_station": "KUR (Khurda Road Jn)",
+      "to_station": "PURI (Puri)",
+      "distance": 43.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-061",
+      "from_station": "KUR (Khurda Road Jn)",
+      "to_station": "BAM (Brahmapur)",
+      "distance": 147.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-062",
+      "from_station": "BAM (Brahmapur)",
+      "to_station": "VSKP (Visakhapatnam Jn)",
+      "distance": 277.9,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-063",
+      "from_station": "VSKP (Visakhapatnam Jn)",
+      "to_station": "RJY (Rajahmundry)",
+      "distance": 200.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-064",
+      "from_station": "RJY (Rajahmundry)",
+      "to_station": "BZA (Vijayawada Jn)",
+      "distance": 149.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-065",
+      "from_station": "KGP (Kharagpur Jn)",
+      "to_station": "TATA (Tatanagar Jn)",
+      "distance": 134.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-066",
+      "from_station": "TATA (Tatanagar Jn)",
+      "to_station": "CKP (Chakradharpur)",
+      "distance": 62.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-067",
+      "from_station": "CKP (Chakradharpur)",
+      "to_station": "ROU (Rourkela Jn)",
+      "distance": 101.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-068",
+      "from_station": "ROU (Rourkela Jn)",
+      "to_station": "BSP (Bilaspur Jn)",
+      "distance": 305.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-069",
+      "from_station": "BSP (Bilaspur Jn)",
+      "to_station": "R (Raipur Jn)",
+      "distance": 110.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-070",
+      "from_station": "R (Raipur Jn)",
+      "to_station": "DURG (Durg Jn)",
+      "distance": 37.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-071",
+      "from_station": "DURG (Durg Jn)",
+      "to_station": "NGP (Nagpur Jn)",
+      "distance": 265.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-072",
+      "from_station": "NDLS (New Delhi)",
+      "to_station": "UMB (Ambala Cantt Jn)",
+      "distance": 198.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-073",
+      "from_station": "UMB (Ambala Cantt Jn)",
+      "to_station": "LDH (Ludhiana Jn)",
+      "distance": 113.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-074",
+      "from_station": "LDH (Ludhiana Jn)",
+      "to_station": "JUC (Jalandhar City)",
+      "distance": 57.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-075",
+      "from_station": "JUC (Jalandhar City)",
+      "to_station": "ASR (Amritsar Jn)",
+      "distance": 78.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-076",
+      "from_station": "JUC (Jalandhar City)",
+      "to_station": "JAT (Jammu Tawi)",
+      "distance": 211.9,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-077",
+      "from_station": "JAT (Jammu Tawi)",
+      "to_station": "UHP (Udhampur)",
+      "distance": 53.1,
+      "track_traction_type": "Single Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-078",
+      "from_station": "UHP (Udhampur)",
+      "to_station": "SVDK (SMVD Katra)",
+      "distance": 24.8,
+      "track_traction_type": "Single Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-079",
+      "from_station": "UMB (Ambala Cantt Jn)",
+      "to_station": "CDG (Chandigarh Jn)",
+      "distance": 44.9,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-080",
+      "from_station": "CDG (Chandigarh Jn)",
+      "to_station": "KLK (Kalka)",
+      "distance": 37.5,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-081",
+      "from_station": "DLI (Delhi Jn)",
+      "to_station": "RE (Rewari Jn)",
+      "distance": 82.5,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-082",
+      "from_station": "RE (Rewari Jn)",
+      "to_station": "AWR (Alwar Jn)",
+      "distance": 74.3,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-083",
+      "from_station": "AWR (Alwar Jn)",
+      "to_station": "JP (Jaipur Jn)",
+      "distance": 150.9,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-084",
+      "from_station": "JP (Jaipur Jn)",
+      "to_station": "AII (Ajmer Jn)",
+      "distance": 135.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-085",
+      "from_station": "AII (Ajmer Jn)",
+      "to_station": "ABR (Abu Road)",
+      "distance": 305.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-086",
+      "from_station": "ABR (Abu Road)",
+      "to_station": "PNU (Palanpur Jn)",
+      "distance": 52.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-087",
+      "from_station": "PNU (Palanpur Jn)",
+      "to_station": "ADI (Ahmedabad Jn)",
+      "distance": 133.5,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-088",
+      "from_station": "JP (Jaipur Jn)",
+      "to_station": "JU (Jodhpur Jn)",
+      "distance": 310.2,
+      "track_traction_type": "Single Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-089",
+      "from_station": "JU (Jodhpur Jn)",
+      "to_station": "JSM (Jaisalmer)",
+      "distance": 299.1,
+      "track_traction_type": "Single Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-090",
+      "from_station": "LKO (Lucknow NR)",
+      "to_station": "BSB (Varanasi Jn)",
+      "distance": 283.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-091",
+      "from_station": "LKO (Lucknow NR)",
+      "to_station": "CNB (Kanpur Central)",
+      "distance": 72.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-092",
+      "from_station": "LJN (Lucknow Junction)",
+      "to_station": "GKP (Gorakhpur Jn)",
+      "distance": 276.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-093",
+      "from_station": "GKP (Gorakhpur Jn)",
+      "to_station": "CPR (Chhapra Jn)",
+      "distance": 180.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-094",
+      "from_station": "CPR (Chhapra Jn)",
+      "to_station": "HJP (Hajipur Jn)",
+      "distance": 58.7,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-095",
+      "from_station": "HJP (Hajipur Jn)",
+      "to_station": "MFP (Muzaffarpur Jn)",
+      "distance": 53.6,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-096",
+      "from_station": "MLDT (Malda Town)",
+      "to_station": "NJP (New Jalpaiguri)",
+      "distance": 235.1,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-097",
+      "from_station": "NJP (New Jalpaiguri)",
+      "to_station": "NCB (New Cooch Behar)",
+      "distance": 125.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-098",
+      "from_station": "NCB (New Cooch Behar)",
+      "to_station": "NBQ (New Bongaigaon)",
+      "distance": 125.2,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-099",
+      "from_station": "NBQ (New Bongaigaon)",
+      "to_station": "KYQ (Kamakhya Jn)",
+      "distance": 175.4,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "SEC-100",
+      "from_station": "KYQ (Kamakhya Jn)",
+      "to_station": "GHY (Guwahati)",
+      "distance": 6.8,
+      "track_traction_type": "Double Line (Electrified)"
+    },
+    {
+      "section_id": "TOTAL SECTION NETWORK DISTANCE (KM)",
+      "distance": 15580.7,
+      "track_traction_type": "Operational Route KM"
+    }
+  ]
+}

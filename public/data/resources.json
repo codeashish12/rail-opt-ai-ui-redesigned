@@ -1,0 +1,808 @@
+{
+  "Resources Master Data": [
+    {
+      "resource_id": "RES-001",
+      "resource_type_specification": "Electric Locomotive (WAP-7)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2024-01-01",
+      "available_until": "2034-12-31",
+      "quantity": 24
+    },
+    {
+      "resource_id": "RES-002",
+      "resource_type_specification": "Freight Locomotive (WAG-9H)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2024-01-15",
+      "available_until": "2035-01-14",
+      "quantity": 35
+    },
+    {
+      "resource_id": "RES-003",
+      "resource_type_specification": "Diesel Locomotive (WDP-4D)",
+      "department_functional_unit": "Mechanical Power",
+      "available_from": "2023-06-01",
+      "available_until": "2033-05-31",
+      "quantity": 18
+    },
+    {
+      "resource_id": "RES-004",
+      "resource_type_specification": "LHB AC 2-Tier Coach",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-02-01",
+      "available_until": "2039-01-31",
+      "quantity": 50
+    },
+    {
+      "resource_id": "RES-005",
+      "resource_type_specification": "LHB AC 3-Tier Coach",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-02-01",
+      "available_until": "2039-01-31",
+      "quantity": 85
+    },
+    {
+      "resource_id": "RES-006",
+      "resource_type_specification": "LHB Sleeper Coach (LWSCN)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2023-11-01",
+      "available_until": "2038-10-31",
+      "quantity": 120
+    },
+    {
+      "resource_id": "RES-007",
+      "resource_type_specification": "LHB Pantry Car (LWCBAC)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2023-08-10",
+      "available_until": "2038-08-09",
+      "quantity": 15
+    },
+    {
+      "resource_id": "RES-008",
+      "resource_type_specification": "BOXN High-Sided Open Wagon",
+      "department_functional_unit": "Operating Freight",
+      "available_from": "2024-03-01",
+      "available_until": "2034-02-28",
+      "quantity": 240
+    },
+    {
+      "resource_id": "RES-009",
+      "resource_type_specification": "BCNHL Covered Bogie Wagon",
+      "department_functional_unit": "Operating Freight",
+      "available_from": "2024-01-10",
+      "available_until": "2034-01-09",
+      "quantity": 180
+    },
+    {
+      "resource_id": "RES-010",
+      "resource_type_specification": "BTPN Petroleum Tanker Wagon",
+      "department_functional_unit": "Operating Freight",
+      "available_from": "2023-05-20",
+      "available_until": "2033-05-19",
+      "quantity": 95
+    },
+    {
+      "resource_id": "RES-011",
+      "resource_type_specification": "BOM Flat Wagons (Steel Rakes)",
+      "department_functional_unit": "Operating Freight",
+      "available_from": "2023-09-15",
+      "available_until": "2033-09-14",
+      "quantity": 60
+    },
+    {
+      "resource_id": "RES-012",
+      "resource_type_specification": "Track Tamping Machine (CSM)",
+      "department_functional_unit": "Civil Engineering",
+      "available_from": "2022-04-01",
+      "available_until": "2032-03-31",
+      "quantity": 8
+    },
+    {
+      "resource_id": "RES-013",
+      "resource_type_specification": "Dynamic Track Stabilizer (DGS)",
+      "department_functional_unit": "Civil Engineering",
+      "available_from": "2022-07-15",
+      "available_until": "2032-07-14",
+      "quantity": 6
+    },
+    {
+      "resource_id": "RES-014",
+      "resource_type_specification": "Ballast Regulating Machine",
+      "department_functional_unit": "Civil Engineering",
+      "available_from": "2023-01-01",
+      "available_until": "2033-12-31",
+      "quantity": 9
+    },
+    {
+      "resource_id": "RES-015",
+      "resource_type_specification": "Ultrasonic Flaw Detector (USFD)",
+      "department_functional_unit": "Civil Engineering Safety",
+      "available_from": "2024-05-01",
+      "available_until": "2029-04-30",
+      "quantity": 45
+    },
+    {
+      "resource_id": "RES-016",
+      "resource_type_specification": "Rail Grinding Machine (RGM-72)",
+      "department_functional_unit": "Civil Engineering",
+      "available_from": "2021-10-01",
+      "available_until": "2031-09-30",
+      "quantity": 3
+    },
+    {
+      "resource_id": "RES-017",
+      "resource_type_specification": "Hydraulic Re-railing Equipment (HRE)",
+      "department_functional_unit": "Safety / Breakdown",
+      "available_from": "2023-03-10",
+      "available_until": "2033-03-09",
+      "quantity": 14
+    },
+    {
+      "resource_id": "RES-018",
+      "resource_type_specification": "140-Tonne Breakdown Crane",
+      "department_functional_unit": "Mechanical Breakdown",
+      "available_from": "2020-01-01",
+      "available_until": "2035-12-31",
+      "quantity": 5
+    },
+    {
+      "resource_id": "RES-019",
+      "resource_type_specification": "Self-Propelled Accident Relief Train (SPART)",
+      "department_functional_unit": "Safety & Operations",
+      "available_from": "2024-01-01",
+      "available_until": "2034-12-31",
+      "quantity": 7
+    },
+    {
+      "resource_id": "RES-020",
+      "resource_type_specification": "Accident Relief Medical Van (ARMV)",
+      "department_functional_unit": "Medical & Safety",
+      "available_from": "2023-04-15",
+      "available_until": "2033-04-14",
+      "quantity": 12
+    },
+    {
+      "resource_id": "RES-021",
+      "resource_type_specification": "Overhead Equipment (OHE) Inspection Car",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2023-08-01",
+      "available_until": "2033-07-31",
+      "quantity": 16
+    },
+    {
+      "resource_id": "RES-022",
+      "resource_type_specification": "Traction Substation Transformer (132/25kV)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2022-01-01",
+      "available_until": "2037-12-31",
+      "quantity": 22
+    },
+    {
+      "resource_id": "RES-023",
+      "resource_type_specification": "Electronic Interlocking System (EI)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-01-01",
+      "available_until": "2034-12-31",
+      "quantity": 30
+    },
+    {
+      "resource_id": "RES-024",
+      "resource_type_specification": "Digital Axle Counter (Single Section)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2023-09-01",
+      "available_until": "2031-08-31",
+      "quantity": 110
+    },
+    {
+      "resource_id": "RES-025",
+      "resource_type_specification": "Digital Axle Counter (Multi Section)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-04-01",
+      "available_until": "2032-03-31",
+      "quantity": 75
+    },
+    {
+      "resource_id": "RES-026",
+      "resource_type_specification": "Point Machine (Electric 143mm)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2023-10-15",
+      "available_until": "2031-10-14",
+      "quantity": 210
+    },
+    {
+      "resource_id": "RES-027",
+      "resource_type_specification": "LED Signal Aspect Units (Multi-aspect)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-01-01",
+      "available_until": "2029-12-31",
+      "quantity": 450
+    },
+    {
+      "resource_id": "RES-028",
+      "resource_type_specification": "Optical Fiber Cable Drums (24 Core)",
+      "department_functional_unit": "Telecommunication",
+      "available_from": "2024-06-01",
+      "available_until": "2027-05-31",
+      "quantity": 150
+    },
+    {
+      "resource_id": "RES-029",
+      "resource_type_specification": "VHF Wireless Base Stations (25W)",
+      "department_functional_unit": "Telecommunication",
+      "available_from": "2023-12-01",
+      "available_until": "2028-11-30",
+      "quantity": 80
+    },
+    {
+      "resource_id": "RES-030",
+      "resource_type_specification": "VHF Walkie-Talkie Transceivers (5W)",
+      "department_functional_unit": "Operating Safety",
+      "available_from": "2024-03-15",
+      "available_until": "2027-03-14",
+      "quantity": 600
+    },
+    {
+      "resource_id": "RES-031",
+      "resource_type_specification": "Automatic Ticket Vending Machine (ATVM)",
+      "department_functional_unit": "Commercial IT",
+      "available_from": "2023-05-01",
+      "available_until": "2028-04-30",
+      "quantity": 130
+    },
+    {
+      "resource_id": "RES-032",
+      "resource_type_specification": "Handheld Ticketing Terminal (HHT)",
+      "department_functional_unit": "Passenger Services",
+      "available_from": "2024-02-10",
+      "available_until": "2027-02-09",
+      "quantity": 350
+    },
+    {
+      "resource_id": "RES-033",
+      "resource_type_specification": "UTS Counter Client Terminal",
+      "department_functional_unit": "Commercial IT",
+      "available_from": "2023-01-01",
+      "available_until": "2028-12-31",
+      "quantity": 200
+    },
+    {
+      "resource_id": "RES-034",
+      "resource_type_specification": "PRS Reservation Workstation",
+      "department_functional_unit": "Commercial IT",
+      "available_from": "2023-01-01",
+      "available_until": "2028-12-31",
+      "quantity": 180
+    },
+    {
+      "resource_id": "RES-035",
+      "resource_type_specification": "Integrated Passenger Info System (IPIS)",
+      "department_functional_unit": "Passenger Amenities",
+      "available_from": "2024-01-01",
+      "available_until": "2029-12-31",
+      "quantity": 65
+    },
+    {
+      "resource_id": "RES-036",
+      "resource_type_specification": "Station CCTV Surveillance Rack (32CH)",
+      "department_functional_unit": "Security / RPF",
+      "available_from": "2023-07-01",
+      "available_until": "2028-06-30",
+      "quantity": 40
+    },
+    {
+      "resource_id": "RES-037",
+      "resource_type_specification": "Door Frame Metal Detector (DFMD)",
+      "department_functional_unit": "Security / RPF",
+      "available_from": "2024-01-01",
+      "available_until": "2029-12-31",
+      "quantity": 90
+    },
+    {
+      "resource_id": "RES-038",
+      "resource_type_specification": "X-Ray Baggage Inspection Scanner",
+      "department_functional_unit": "Security / RPF",
+      "available_from": "2023-08-15",
+      "available_until": "2030-08-14",
+      "quantity": 35
+    },
+    {
+      "resource_id": "RES-039",
+      "resource_type_specification": "Wheel Lathe Machine (Underfloor)",
+      "department_functional_unit": "Mechanical Workshop",
+      "available_from": "2022-03-01",
+      "available_until": "2037-02-28",
+      "quantity": 6
+    },
+    {
+      "resource_id": "RES-040",
+      "resource_type_specification": "Wheel Balancing Dynamic Rig",
+      "department_functional_unit": "Mechanical Workshop",
+      "available_from": "2022-11-01",
+      "available_until": "2032-10-31",
+      "quantity": 10
+    },
+    {
+      "resource_id": "RES-041",
+      "resource_type_specification": "Electric Traverser (60-Tonne)",
+      "department_functional_unit": "Mechanical Workshop",
+      "available_from": "2021-05-01",
+      "available_until": "2036-04-30",
+      "quantity": 4
+    },
+    {
+      "resource_id": "RES-042",
+      "resource_type_specification": "EOT Overhead Travelling Crane (50T)",
+      "department_functional_unit": "Mechanical Workshop",
+      "available_from": "2020-08-01",
+      "available_until": "2035-07-31",
+      "quantity": 12
+    },
+    {
+      "resource_id": "RES-043",
+      "resource_type_specification": "Automatic Coach Washing Plant (ACWP)",
+      "department_functional_unit": "Mechanical Maintenance",
+      "available_from": "2023-09-01",
+      "available_until": "2033-08-31",
+      "quantity": 8
+    },
+    {
+      "resource_id": "RES-044",
+      "resource_type_specification": "Bio-Toilet Evacuation & Servicing Machine",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-01-01",
+      "available_until": "2029-12-31",
+      "quantity": 25
+    },
+    {
+      "resource_id": "RES-045",
+      "resource_type_specification": "Train Lighting Battery Bank (110V DC)",
+      "department_functional_unit": "Electrical General",
+      "available_from": "2024-02-01",
+      "available_until": "2028-01-31",
+      "quantity": 140
+    },
+    {
+      "resource_id": "RES-046",
+      "resource_type_specification": "Roof-Mounted AC Package Unit (RMPU)",
+      "department_functional_unit": "Electrical Coaching",
+      "available_from": "2024-03-01",
+      "available_until": "2032-02-28",
+      "quantity": 90
+    },
+    {
+      "resource_id": "RES-047",
+      "resource_type_specification": "Station Backup Diesel Generator (500kVA)",
+      "department_functional_unit": "Electrical General",
+      "available_from": "2023-01-01",
+      "available_until": "2033-12-31",
+      "quantity": 20
+    },
+    {
+      "resource_id": "RES-048",
+      "resource_type_specification": "Solar Rooftop Panel Array (100kWp)",
+      "department_functional_unit": "Electrical Clean Energy",
+      "available_from": "2024-04-01",
+      "available_until": "2039-03-31",
+      "quantity": 30
+    },
+    {
+      "resource_id": "RES-049",
+      "resource_type_specification": "High-Mast Yard Lighting Tower (30m)",
+      "department_functional_unit": "Electrical General",
+      "available_from": "2022-09-01",
+      "available_until": "2037-08-31",
+      "quantity": 55
+    },
+    {
+      "resource_id": "RES-050",
+      "resource_type_specification": "Station Escalator Unit (Heavy Duty)",
+      "department_functional_unit": "Civil Engineering",
+      "available_from": "2023-06-01",
+      "available_until": "2038-05-31",
+      "quantity": 28
+    },
+    {
+      "resource_id": "RES-051",
+      "resource_type_specification": "Passenger Elevator Unit (13-Passenger)",
+      "department_functional_unit": "Civil Engineering",
+      "available_from": "2023-06-01",
+      "available_until": "2038-05-31",
+      "quantity": 32
+    },
+    {
+      "resource_id": "RES-052",
+      "resource_type_specification": "Battery Operated Platform Cart",
+      "department_functional_unit": "Passenger Amenities",
+      "available_from": "2024-01-15",
+      "available_until": "2028-01-14",
+      "quantity": 70
+    },
+    {
+      "resource_id": "RES-053",
+      "resource_type_specification": "Luggage Trolley (Stainless Steel)",
+      "department_functional_unit": "Passenger Amenities",
+      "available_from": "2024-05-01",
+      "available_until": "2027-04-30",
+      "quantity": 500
+    },
+    {
+      "resource_id": "RES-054",
+      "resource_type_specification": "Rail Flash Butt Welding Plant (Mobile)",
+      "department_functional_unit": "Civil Engineering Track",
+      "available_from": "2022-10-01",
+      "available_until": "2032-09-30",
+      "quantity": 5
+    },
+    {
+      "resource_id": "RES-055",
+      "resource_type_specification": "Pre-stressed Concrete Sleeper Sets (60kg)",
+      "department_functional_unit": "Stores Civil",
+      "available_from": "2025-01-01",
+      "available_until": "2027-12-31",
+      "quantity": 25000
+    },
+    {
+      "resource_id": "RES-056",
+      "resource_type_specification": "Fish Plates with Bolts (60kg Rail)",
+      "department_functional_unit": "Stores Civil",
+      "available_from": "2025-01-01",
+      "available_until": "2028-12-31",
+      "quantity": 8000
+    },
+    {
+      "resource_id": "RES-057",
+      "resource_type_specification": "Elastic Rail Clips (ERC Mk-III)",
+      "department_functional_unit": "Stores Civil",
+      "available_from": "2025-02-01",
+      "available_until": "2028-01-31",
+      "quantity": 45000
+    },
+    {
+      "resource_id": "RES-058",
+      "resource_type_specification": "Rubber Grooved Sole Plates (6mm)",
+      "department_functional_unit": "Stores Civil",
+      "available_from": "2025-02-01",
+      "available_until": "2028-01-31",
+      "quantity": 40000
+    },
+    {
+      "resource_id": "RES-059",
+      "resource_type_specification": "Glued Insulated Rail Joints (60kg)",
+      "department_functional_unit": "Signal & Track",
+      "available_from": "2024-07-01",
+      "available_until": "2029-06-30",
+      "quantity": 650
+    },
+    {
+      "resource_id": "RES-060",
+      "resource_type_specification": "Turnout Diamond Crossing Set (1 in 12)",
+      "department_functional_unit": "Civil Engineering Track",
+      "available_from": "2024-03-01",
+      "available_until": "2034-02-28",
+      "quantity": 40
+    },
+    {
+      "resource_id": "RES-061",
+      "resource_type_specification": "Bogie Frame Assembly (FIAT-LHB)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-01-01",
+      "available_until": "2034-12-31",
+      "quantity": 60
+    },
+    {
+      "resource_id": "RES-062",
+      "resource_type_specification": "Solid Forged Wheelset (LHB)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-02-15",
+      "available_until": "2032-02-14",
+      "quantity": 160
+    },
+    {
+      "resource_id": "RES-063",
+      "resource_type_specification": "Air Brake Distributor Valve (LHB)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-06-01",
+      "available_until": "2030-05-31",
+      "quantity": 220
+    },
+    {
+      "resource_id": "RES-064",
+      "resource_type_specification": "Centre Buffer Coupler (AAR Tightlock)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2023-11-01",
+      "available_until": "2033-10-31",
+      "quantity": 110
+    },
+    {
+      "resource_id": "RES-065",
+      "resource_type_specification": "Air Spring Suspension Unit (120kN)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-03-01",
+      "available_until": "2030-02-28",
+      "quantity": 140
+    },
+    {
+      "resource_id": "RES-066",
+      "resource_type_specification": "Brake Disc Rotor Assembly (640mm)",
+      "department_functional_unit": "Mechanical Coaching",
+      "available_from": "2024-04-01",
+      "available_until": "2029-03-31",
+      "quantity": 280
+    },
+    {
+      "resource_id": "RES-067",
+      "resource_type_specification": "Composite Brake Blocks (K-Type)",
+      "department_functional_unit": "Stores Mechanical",
+      "available_from": "2025-01-01",
+      "available_until": "2027-12-31",
+      "quantity": 3500
+    },
+    {
+      "resource_id": "RES-068",
+      "resource_type_specification": "Traction Motor (3-Phase 850kW)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2023-10-01",
+      "available_until": "2033-09-30",
+      "quantity": 45
+    },
+    {
+      "resource_id": "RES-069",
+      "resource_type_specification": "Traction Inverter Module (IGBT Based)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2024-01-01",
+      "available_until": "2034-12-31",
+      "quantity": 25
+    },
+    {
+      "resource_id": "RES-070",
+      "resource_type_specification": "Pantograph Assembly (High Reach)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2024-05-01",
+      "available_until": "2032-04-30",
+      "quantity": 38
+    },
+    {
+      "resource_id": "RES-071",
+      "resource_type_specification": "Vacuum Circuit Breaker (VCB 25kV)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2023-08-01",
+      "available_until": "2033-07-31",
+      "quantity": 50
+    },
+    {
+      "resource_id": "RES-072",
+      "resource_type_specification": "Section Insulator Assembly (OHE)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2024-02-01",
+      "available_until": "2030-01-31",
+      "quantity": 85
+    },
+    {
+      "resource_id": "RES-073",
+      "resource_type_specification": "Cadmium Copper Catenary Wire Drum",
+      "department_functional_unit": "Stores Electrical",
+      "available_from": "2025-01-01",
+      "available_until": "2028-12-31",
+      "quantity": 40
+    },
+    {
+      "resource_id": "RES-074",
+      "resource_type_specification": "Hard Drawn Grooved Contact Wire Drum",
+      "department_functional_unit": "Stores Electrical",
+      "available_from": "2025-01-01",
+      "available_until": "2028-12-31",
+      "quantity": 50
+    },
+    {
+      "resource_id": "RES-075",
+      "resource_type_specification": "Auto Tensioning Device (3-Pulley ATD)",
+      "department_functional_unit": "Electrical Traction",
+      "available_from": "2023-12-01",
+      "available_until": "2033-11-30",
+      "quantity": 75
+    },
+    {
+      "resource_id": "RES-076",
+      "resource_type_specification": "OHE Mast (Broad Flange Beam B-200)",
+      "department_functional_unit": "Stores Electrical",
+      "available_from": "2024-06-01",
+      "available_until": "2034-05-31",
+      "quantity": 600
+    },
+    {
+      "resource_id": "RES-077",
+      "resource_type_specification": "Kavach Loco TCAS Safety Unit",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-04-01",
+      "available_until": "2034-03-31",
+      "quantity": 50
+    },
+    {
+      "resource_id": "RES-078",
+      "resource_type_specification": "Kavach Trackside Radio Frequency Unit",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-04-01",
+      "available_until": "2034-03-31",
+      "quantity": 120
+    },
+    {
+      "resource_id": "RES-079",
+      "resource_type_specification": "Kavach RFID Tag Unit (Track Mounted)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-01-01",
+      "available_until": "2032-12-31",
+      "quantity": 850
+    },
+    {
+      "resource_id": "RES-080",
+      "resource_type_specification": "Data Logger Network Unit (512 Channel)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2023-09-01",
+      "available_until": "2031-08-31",
+      "quantity": 40
+    },
+    {
+      "resource_id": "RES-081",
+      "resource_type_specification": "Block Proving Axle Counter (BPAC)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2024-02-01",
+      "available_until": "2032-01-31",
+      "quantity": 65
+    },
+    {
+      "resource_id": "RES-082",
+      "resource_type_specification": "Integrated Power Supply System (IPS)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2023-11-01",
+      "available_until": "2031-10-31",
+      "quantity": 35
+    },
+    {
+      "resource_id": "RES-083",
+      "resource_type_specification": "Track Circuit Audio Frequency Unit (AFTC)",
+      "department_functional_unit": "Signal & Telecomm",
+      "available_from": "2023-07-01",
+      "available_until": "2031-06-30",
+      "quantity": 90
+    },
+    {
+      "resource_id": "RES-084",
+      "resource_type_specification": "Fail-Safe Timer Relay Unit (Q-Series)",
+      "department_functional_unit": "Stores Signal",
+      "available_from": "2024-05-01",
+      "available_until": "2030-04-30",
+      "quantity": 400
+    },
+    {
+      "resource_id": "RES-085",
+      "resource_type_specification": "Railway Yard Shunting Tractor",
+      "department_functional_unit": "Operating Yards",
+      "available_from": "2022-08-01",
+      "available_until": "2032-07-31",
+      "quantity": 15
+    },
+    {
+      "resource_id": "RES-086",
+      "resource_type_specification": "Forklift Truck (3-Tonne Heavy Duty)",
+      "department_functional_unit": "Stores Workshop",
+      "available_from": "2023-03-01",
+      "available_until": "2031-02-28",
+      "quantity": 28
+    },
+    {
+      "resource_id": "RES-087",
+      "resource_type_specification": "Mobile Water Tanker (10000L)",
+      "department_functional_unit": "Civil Maintenance",
+      "available_from": "2024-01-01",
+      "available_until": "2030-12-31",
+      "quantity": 12
+    },
+    {
+      "resource_id": "RES-088",
+      "resource_type_specification": "Weed Mowing Road-Railer Vehicle",
+      "department_functional_unit": "Civil Track",
+      "available_from": "2023-05-01",
+      "available_until": "2031-04-30",
+      "quantity": 8
+    },
+    {
+      "resource_id": "RES-089",
+      "resource_type_specification": "Rail-Cum-Road Maintenance Van (RRMV)",
+      "department_functional_unit": "Civil Track",
+      "available_from": "2024-01-01",
+      "available_until": "2032-12-31",
+      "quantity": 14
+    },
+    {
+      "resource_id": "RES-090",
+      "resource_type_specification": "Electronic In-Motion Weighbridge (EIMWB)",
+      "department_functional_unit": "Operating Freight",
+      "available_from": "2023-10-01",
+      "available_until": "2033-09-30",
+      "quantity": 22
+    },
+    {
+      "resource_id": "RES-091",
+      "resource_type_specification": "Automated Wheel Profile Measuring Unit",
+      "department_functional_unit": "Mechanical Yard",
+      "available_from": "2024-03-01",
+      "available_until": "2032-02-28",
+      "quantity": 10
+    },
+    {
+      "resource_id": "RES-092",
+      "resource_type_specification": "Acoustic Bearing Detector Unit",
+      "department_functional_unit": "Mechanical Yard",
+      "available_from": "2024-06-01",
+      "available_until": "2032-05-31",
+      "quantity": 16
+    },
+    {
+      "resource_id": "RES-093",
+      "resource_type_specification": "Hot Axle Box Detector (HABD)",
+      "department_functional_unit": "Mechanical Safety",
+      "available_from": "2024-01-01",
+      "available_until": "2031-12-31",
+      "quantity": 18
+    },
+    {
+      "resource_id": "RES-094",
+      "resource_type_specification": "Wild (Wheel Impact Load Detector)",
+      "department_functional_unit": "Mechanical Track",
+      "available_from": "2023-12-01",
+      "available_until": "2031-11-30",
+      "quantity": 12
+    },
+    {
+      "resource_id": "RES-095",
+      "resource_type_specification": "Crew Breathalyzer Kiosk System",
+      "department_functional_unit": "Operating Safety",
+      "available_from": "2024-02-01",
+      "available_until": "2028-01-31",
+      "quantity": 60
+    },
+    {
+      "resource_id": "RES-096",
+      "resource_type_specification": "Loco Simulator System (Full Mission)",
+      "department_functional_unit": "Training Institute",
+      "available_from": "2022-01-01",
+      "available_until": "2032-12-31",
+      "quantity": 4
+    },
+    {
+      "resource_id": "RES-097",
+      "resource_type_specification": "Central Traffic Control Console (CTC)",
+      "department_functional_unit": "Operating HQ",
+      "available_from": "2023-06-01",
+      "available_until": "2033-05-31",
+      "quantity": 6
+    },
+    {
+      "resource_id": "RES-098",
+      "resource_type_specification": "FOIS Network Edge Router Terminal",
+      "department_functional_unit": "IT & Operating",
+      "available_from": "2024-01-01",
+      "available_until": "2029-12-31",
+      "quantity": 45
+    },
+    {
+      "resource_id": "RES-099",
+      "resource_type_specification": "Disaster Management Inflatable Tent Set",
+      "department_functional_unit": "Safety & Relief",
+      "available_from": "2024-05-01",
+      "available_until": "2029-04-30",
+      "quantity": 30
+    },
+    {
+      "resource_id": "RES-100",
+      "resource_type_specification": "Hydraulic Rescue Jaws of Life Cutter",
+      "department_functional_unit": "Safety / Breakdown",
+      "available_from": "2024-01-01",
+      "available_until": "2030-12-31",
+      "quantity": 25
+    },
+    {
+      "resource_id": "GRAND TOTAL RESOURCE INVENTORY QUANTITY",
+      "quantity": 131042
+    }
+  ]
+}

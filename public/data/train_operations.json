@@ -1,0 +1,941 @@
+{
+  "Train Operations Master": [
+    {
+      "train_id": "TRN-001",
+      "train_number": "22436",
+      "train_service_type": "Vande Bharat Express",
+      "section_id": "SEC-001",
+      "arrival_time": "06:00",
+      "departure_time": "06:05",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-002",
+      "train_number": "12004",
+      "train_service_type": "Shatabdi Express",
+      "section_id": "SEC-002",
+      "arrival_time": "06:10",
+      "departure_time": "06:15",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-003",
+      "train_number": "12424",
+      "train_service_type": "Rajdhani Express",
+      "section_id": "SEC-003",
+      "arrival_time": "16:10",
+      "departure_time": "16:15",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-004",
+      "train_number": "22692",
+      "train_service_type": "Bengaluru Rajdhani",
+      "section_id": "SEC-004",
+      "arrival_time": "19:50",
+      "departure_time": "19:55",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-005",
+      "train_number": "12952",
+      "train_service_type": "Mumbai Rajdhani",
+      "section_id": "SEC-005",
+      "arrival_time": "16:55",
+      "departure_time": "17:00",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-006",
+      "train_number": "12302",
+      "train_service_type": "Howrah Rajdhani",
+      "section_id": "SEC-006",
+      "arrival_time": "16:50",
+      "departure_time": "16:55",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-007",
+      "train_number": "20901",
+      "train_service_type": "Vande Bharat Express",
+      "section_id": "SEC-007",
+      "arrival_time": "06:00",
+      "departure_time": "06:05",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-008",
+      "train_number": "20607",
+      "train_service_type": "Vande Bharat Express",
+      "section_id": "SEC-008",
+      "arrival_time": "05:50",
+      "departure_time": "05:55",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-009",
+      "train_number": "22222",
+      "train_service_type": "CSMT Rajdhani",
+      "section_id": "SEC-009",
+      "arrival_time": "16:55",
+      "departure_time": "17:00",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-010",
+      "train_number": "12002",
+      "train_service_type": "Bhopal Shatabdi",
+      "section_id": "SEC-010",
+      "arrival_time": "06:00",
+      "departure_time": "06:05",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-011",
+      "train_number": "12260",
+      "train_service_type": "Duronto Express",
+      "section_id": "SEC-011",
+      "arrival_time": "19:45",
+      "departure_time": "19:50",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-012",
+      "train_number": "12015",
+      "train_service_type": "Ajmer Shatabdi",
+      "section_id": "SEC-012",
+      "arrival_time": "06:10",
+      "departure_time": "06:15",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-013",
+      "train_number": "12019",
+      "train_service_type": "Howrah Shatabdi",
+      "section_id": "SEC-013",
+      "arrival_time": "06:05",
+      "departure_time": "06:10",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-014",
+      "train_number": "20833",
+      "train_service_type": "Vande Bharat Express",
+      "section_id": "SEC-014",
+      "arrival_time": "05:45",
+      "departure_time": "05:50",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-015",
+      "train_number": "20643",
+      "train_service_type": "Vande Bharat Express",
+      "section_id": "SEC-015",
+      "arrival_time": "06:00",
+      "departure_time": "06:05",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-016",
+      "train_number": "12626",
+      "train_service_type": "Kerala Superfast Express",
+      "section_id": "SEC-016",
+      "arrival_time": "20:10",
+      "departure_time": "20:15",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-017",
+      "train_number": "12802",
+      "train_service_type": "Purushottam Express",
+      "section_id": "SEC-017",
+      "arrival_time": "22:40",
+      "departure_time": "22:45",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-018",
+      "train_number": "12956",
+      "train_service_type": "Jaipur Superfast Express",
+      "section_id": "SEC-018",
+      "arrival_time": "18:55",
+      "departure_time": "19:00",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-019",
+      "train_number": "12312",
+      "train_service_type": "Netaji Express",
+      "section_id": "SEC-019",
+      "arrival_time": "06:15",
+      "departure_time": "06:20",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-020",
+      "train_number": "12616",
+      "train_service_type": "Grand Trunk (GT) Express",
+      "section_id": "SEC-020",
+      "arrival_time": "16:10",
+      "departure_time": "16:15",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-021",
+      "train_number": "12622",
+      "train_service_type": "Tamil Nadu Express",
+      "section_id": "SEC-021",
+      "arrival_time": "21:05",
+      "departure_time": "21:10",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-022",
+      "train_number": "12840",
+      "train_service_type": "Howrah Mail",
+      "section_id": "SEC-022",
+      "arrival_time": "19:00",
+      "departure_time": "19:05",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-023",
+      "train_number": "12138",
+      "train_service_type": "Punjab Mail",
+      "section_id": "SEC-023",
+      "arrival_time": "21:40",
+      "departure_time": "21:45",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-024",
+      "train_number": "12904",
+      "train_service_type": "Golden Temple Mail",
+      "section_id": "SEC-024",
+      "arrival_time": "18:55",
+      "departure_time": "19:00",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-025",
+      "train_number": "12554",
+      "train_service_type": "Vaishali Express",
+      "section_id": "SEC-025",
+      "arrival_time": "20:40",
+      "departure_time": "20:45",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-026",
+      "train_number": "12724",
+      "train_service_type": "Telangana Express",
+      "section_id": "SEC-026",
+      "arrival_time": "16:00",
+      "departure_time": "16:05",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-027",
+      "train_number": "12618",
+      "train_service_type": "Mangala Lakshadweep SF",
+      "section_id": "SEC-027",
+      "arrival_time": "05:35",
+      "departure_time": "05:40",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-028",
+      "train_number": "12864",
+      "train_service_type": "Howrah SF Express",
+      "section_id": "SEC-028",
+      "arrival_time": "10:35",
+      "departure_time": "10:40",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-029",
+      "train_number": "12296",
+      "train_service_type": "Sanghamitra SF Express",
+      "section_id": "SEC-029",
+      "arrival_time": "13:30",
+      "departure_time": "13:35",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-030",
+      "train_number": "12471",
+      "train_service_type": "Swaraj Express",
+      "section_id": "SEC-030",
+      "arrival_time": "11:00",
+      "departure_time": "11:05",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-031",
+      "train_number": "12925",
+      "train_service_type": "Paschim Express",
+      "section_id": "SEC-031",
+      "arrival_time": "11:25",
+      "departure_time": "11:30",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-032",
+      "train_number": "12137",
+      "train_service_type": "Punjab Mail (Down)",
+      "section_id": "SEC-032",
+      "arrival_time": "19:35",
+      "departure_time": "19:40",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-033",
+      "train_number": "12322",
+      "train_service_type": "Kolkata Mail",
+      "section_id": "SEC-033",
+      "arrival_time": "22:15",
+      "departure_time": "22:20",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-034",
+      "train_number": "12839",
+      "train_service_type": "Chennai Mail",
+      "section_id": "SEC-034",
+      "arrival_time": "23:55",
+      "departure_time": "00:00",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-035",
+      "train_number": "12860",
+      "train_service_type": "Gitanjali Express",
+      "section_id": "SEC-035",
+      "arrival_time": "14:05",
+      "departure_time": "14:10",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-036",
+      "train_number": "12141",
+      "train_service_type": "Patliputra SF Express",
+      "section_id": "SEC-036",
+      "arrival_time": "23:35",
+      "departure_time": "23:40",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-037",
+      "train_number": "12423",
+      "train_service_type": "Dibrugarh Rajdhani",
+      "section_id": "SEC-037",
+      "arrival_time": "06:45",
+      "departure_time": "06:50",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-038",
+      "train_number": "12046",
+      "train_service_type": "Chandigarh Shatabdi",
+      "section_id": "SEC-038",
+      "arrival_time": "12:05",
+      "departure_time": "12:10",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-039",
+      "train_number": "12708",
+      "train_service_type": "AP Sampark Kranti",
+      "section_id": "SEC-039",
+      "arrival_time": "07:10",
+      "departure_time": "07:15",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-040",
+      "train_number": "12414",
+      "train_service_type": "Pooja Superfast Express",
+      "section_id": "SEC-040",
+      "arrival_time": "18:15",
+      "departure_time": "18:20",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-041",
+      "train_number": "12420",
+      "train_service_type": "Gomti Express",
+      "section_id": "SEC-041",
+      "arrival_time": "12:20",
+      "departure_time": "12:25",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-042",
+      "train_number": "12566",
+      "train_service_type": "Bihar Sampark Kranti",
+      "section_id": "SEC-042",
+      "arrival_time": "13:00",
+      "departure_time": "13:05",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-043",
+      "train_number": "12722",
+      "train_service_type": "Dakshin Express",
+      "section_id": "SEC-043",
+      "arrival_time": "22:50",
+      "departure_time": "22:55",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-044",
+      "train_number": "12627",
+      "train_service_type": "Karnataka Express",
+      "section_id": "SEC-044",
+      "arrival_time": "19:20",
+      "departure_time": "19:25",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-045",
+      "train_number": "12801",
+      "train_service_type": "Purushottam Express (DN)",
+      "section_id": "SEC-045",
+      "arrival_time": "21:55",
+      "departure_time": "22:00",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-046",
+      "train_number": "12009",
+      "train_service_type": "Mumbai Ahmedabad Shatabdi",
+      "section_id": "SEC-046",
+      "arrival_time": "06:20",
+      "departure_time": "06:25",
+      "priority": 1
+    },
+    {
+      "train_id": "TRN-047",
+      "train_number": "12430",
+      "train_service_type": "Lucknow AC Superfast",
+      "section_id": "SEC-047",
+      "arrival_time": "23:25",
+      "departure_time": "23:30",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-048",
+      "train_number": "12444",
+      "train_service_type": "Anand Vihar Haldia SF",
+      "section_id": "SEC-048",
+      "arrival_time": "20:20",
+      "departure_time": "20:25",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-049",
+      "train_number": "12760",
+      "train_service_type": "Charminar Express",
+      "section_id": "SEC-049",
+      "arrival_time": "18:00",
+      "departure_time": "18:05",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-050",
+      "train_number": "12604",
+      "train_service_type": "Chennai Express",
+      "section_id": "SEC-050",
+      "arrival_time": "16:45",
+      "departure_time": "16:50",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-051",
+      "train_number": "14218",
+      "train_service_type": "Unchahar Express",
+      "section_id": "SEC-051",
+      "arrival_time": "16:45",
+      "departure_time": "16:50",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-052",
+      "train_number": "15014",
+      "train_service_type": "Ranikhet Express",
+      "section_id": "SEC-052",
+      "arrival_time": "22:30",
+      "departure_time": "22:35",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-053",
+      "train_number": "13006",
+      "train_service_type": "Amritsar Howrah Mail",
+      "section_id": "SEC-053",
+      "arrival_time": "18:25",
+      "departure_time": "18:30",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-054",
+      "train_number": "14056",
+      "train_service_type": "Brahmaputra Mail",
+      "section_id": "SEC-054",
+      "arrival_time": "23:40",
+      "departure_time": "23:45",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-055",
+      "train_number": "15910",
+      "train_service_type": "Avadh Assam Express",
+      "section_id": "SEC-055",
+      "arrival_time": "05:10",
+      "departure_time": "05:15",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-056",
+      "train_number": "18478",
+      "train_service_type": "Kalinga Utkal Express",
+      "section_id": "SEC-056",
+      "arrival_time": "05:45",
+      "departure_time": "05:50",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-057",
+      "train_number": "19038",
+      "train_service_type": "Avadh Express",
+      "section_id": "SEC-057",
+      "arrival_time": "22:00",
+      "departure_time": "22:05",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-058",
+      "train_number": "11078",
+      "train_service_type": "Jhelum Express",
+      "section_id": "SEC-058",
+      "arrival_time": "23:45",
+      "departure_time": "23:50",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-059",
+      "train_number": "13152",
+      "train_service_type": "Sealdah Express",
+      "section_id": "SEC-059",
+      "arrival_time": "20:30",
+      "departure_time": "20:35",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-060",
+      "train_number": "15657",
+      "train_service_type": "Brahmaputra Mail (DN)",
+      "section_id": "SEC-060",
+      "arrival_time": "13:20",
+      "departure_time": "13:25",
+      "priority": 2
+    },
+    {
+      "train_id": "TRN-061",
+      "train_number": "04408",
+      "train_service_type": "Delhi Ghaziabad MEMU",
+      "section_id": "SEC-061",
+      "arrival_time": "07:15",
+      "departure_time": "07:17",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-062",
+      "train_number": "04414",
+      "train_service_type": "Delhi Aligarh Passenger",
+      "section_id": "SEC-062",
+      "arrival_time": "08:30",
+      "departure_time": "08:32",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-063",
+      "train_number": "04958",
+      "train_service_type": "Ambala Kurukshetra Passenger",
+      "section_id": "SEC-063",
+      "arrival_time": "09:10",
+      "departure_time": "09:12",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-064",
+      "train_number": "97005",
+      "train_service_type": "CSMT Kalyan Slow Local",
+      "section_id": "SEC-064",
+      "arrival_time": "08:14",
+      "departure_time": "08:15",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-065",
+      "train_number": "97007",
+      "train_service_type": "CSMT Dombivli Fast Local",
+      "section_id": "SEC-065",
+      "arrival_time": "08:26",
+      "departure_time": "08:27",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-066",
+      "train_number": "90001",
+      "train_service_type": "Churchgate Virar Fast Local",
+      "section_id": "SEC-066",
+      "arrival_time": "08:18",
+      "departure_time": "08:19",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-067",
+      "train_number": "90005",
+      "train_service_type": "Churchgate Borivali Slow Local",
+      "section_id": "SEC-067",
+      "arrival_time": "08:32",
+      "departure_time": "08:33",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-068",
+      "train_number": "03001",
+      "train_service_type": "Howrah Barddhaman Local",
+      "section_id": "SEC-068",
+      "arrival_time": "07:45",
+      "departure_time": "07:47",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-069",
+      "train_number": "03111",
+      "train_service_type": "Sealdah Ranaghat Local",
+      "section_id": "SEC-069",
+      "arrival_time": "08:20",
+      "departure_time": "08:22",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-070",
+      "train_number": "43001",
+      "train_service_type": "Chennai Beach Tambaram EMU",
+      "section_id": "SEC-070",
+      "arrival_time": "08:05",
+      "departure_time": "08:06",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-071",
+      "train_number": "43201",
+      "train_service_type": "Chennai Central Arakkonam EMU",
+      "section_id": "SEC-071",
+      "arrival_time": "08:40",
+      "departure_time": "08:42",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-072",
+      "train_number": "06501",
+      "train_service_type": "KSR Bengaluru Marikuppam MEMU",
+      "section_id": "SEC-072",
+      "arrival_time": "07:05",
+      "departure_time": "07:07",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-073",
+      "train_number": "47151",
+      "train_service_type": "Hyderabad Lingampalli MMTS",
+      "section_id": "SEC-073",
+      "arrival_time": "08:15",
+      "departure_time": "08:16",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-074",
+      "train_number": "47175",
+      "train_service_type": "Falaknuma Secunderabad MMTS",
+      "section_id": "SEC-074",
+      "arrival_time": "08:45",
+      "departure_time": "08:46",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-075",
+      "train_number": "04101",
+      "train_service_type": "Kanpur Central Fatehpur Passenger",
+      "section_id": "SEC-075",
+      "arrival_time": "06:40",
+      "departure_time": "06:42",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-076",
+      "train_number": "03201",
+      "train_service_type": "Patna Buxar Passenger",
+      "section_id": "SEC-076",
+      "arrival_time": "07:30",
+      "departure_time": "07:32",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-077",
+      "train_number": "05101",
+      "train_service_type": "Gorakhpur Chhapra Passenger",
+      "section_id": "SEC-077",
+      "arrival_time": "06:15",
+      "departure_time": "06:17",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-078",
+      "train_number": "08401",
+      "train_service_type": "Bhubaneswar Puri Passenger",
+      "section_id": "SEC-078",
+      "arrival_time": "07:00",
+      "departure_time": "07:02",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-079",
+      "train_number": "09101",
+      "train_service_type": "Vadodara Ahmedabad MEMU",
+      "section_id": "SEC-079",
+      "arrival_time": "06:30",
+      "departure_time": "06:32",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-080",
+      "train_number": "07401",
+      "train_service_type": "Vijayawada Rajahmundry MEMU",
+      "section_id": "SEC-080",
+      "arrival_time": "06:50",
+      "departure_time": "06:52",
+      "priority": 3
+    },
+    {
+      "train_id": "TRN-081",
+      "train_number": "CONTR-881",
+      "train_service_type": "CONCOR Container Freight Express",
+      "section_id": "SEC-081",
+      "arrival_time": "02:15",
+      "departure_time": "02:25",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-082",
+      "train_number": "CONTR-882",
+      "train_service_type": "CONCOR Double Stack Container",
+      "section_id": "SEC-082",
+      "arrival_time": "03:40",
+      "departure_time": "03:50",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-083",
+      "train_number": "CONTR-883",
+      "train_service_type": "Port Express Rake (JNPT)",
+      "section_id": "SEC-083",
+      "arrival_time": "04:10",
+      "departure_time": "04:20",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-084",
+      "train_number": "CONTR-884",
+      "train_service_type": "Domestic Container Freight Rake",
+      "section_id": "SEC-084",
+      "arrival_time": "01:30",
+      "departure_time": "01:40",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-085",
+      "train_number": "CONTR-885",
+      "train_service_type": "Auto Car Carrier (AFTO Rake)",
+      "section_id": "SEC-085",
+      "arrival_time": "05:00",
+      "departure_time": "05:15",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-086",
+      "train_number": "CONTR-886",
+      "train_service_type": "Reefer Cold-Chain Container Rake",
+      "section_id": "SEC-086",
+      "arrival_time": "02:45",
+      "departure_time": "02:55",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-087",
+      "train_number": "CONTR-887",
+      "train_service_type": "Parcel Cargo Express Train (PCET)",
+      "section_id": "SEC-087",
+      "arrival_time": "03:15",
+      "departure_time": "03:25",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-088",
+      "train_number": "CONTR-888",
+      "train_service_type": "Time-Tabled Parcel Special Rake",
+      "section_id": "SEC-088",
+      "arrival_time": "04:30",
+      "departure_time": "04:40",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-089",
+      "train_number": "CONTR-889",
+      "train_service_type": "Export Container Special",
+      "section_id": "SEC-089",
+      "arrival_time": "01:10",
+      "departure_time": "01:20",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-090",
+      "train_number": "CONTR-890",
+      "train_service_type": "Automobile NMG Freight Rake",
+      "section_id": "SEC-090",
+      "arrival_time": "02:00",
+      "departure_time": "02:10",
+      "priority": 4
+    },
+    {
+      "train_id": "TRN-091",
+      "train_number": "BOXN-901",
+      "train_service_type": "Coal Freight Block Rake (BOXN)",
+      "section_id": "SEC-091",
+      "arrival_time": "00:45",
+      "departure_time": "01:00",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-092",
+      "train_number": "BOXN-902",
+      "train_service_type": "Thermal Coal Rake (NTPC Siding)",
+      "section_id": "SEC-092",
+      "arrival_time": "01:20",
+      "departure_time": "01:35",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-093",
+      "train_number": "BOXN-903",
+      "train_service_type": "Iron Ore Freight Rake (BOBRN)",
+      "section_id": "SEC-093",
+      "arrival_time": "02:10",
+      "departure_time": "02:25",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-094",
+      "train_number": "BCNHL-904",
+      "train_service_type": "Foodgrain Freight Rake (FCI)",
+      "section_id": "SEC-094",
+      "arrival_time": "03:00",
+      "departure_time": "03:15",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-095",
+      "train_number": "BCNHL-905",
+      "train_service_type": "Cement Bulk Carrier Rake",
+      "section_id": "SEC-095",
+      "arrival_time": "03:45",
+      "departure_time": "04:00",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-096",
+      "train_number": "BCNHL-906",
+      "train_service_type": "Fertilizer Goods Rake",
+      "section_id": "SEC-096",
+      "arrival_time": "04:20",
+      "departure_time": "04:35",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-097",
+      "train_number": "BTPN-907",
+      "train_service_type": "POL Petroleum Tanker Rake (IOCL)",
+      "section_id": "SEC-097",
+      "arrival_time": "01:50",
+      "departure_time": "02:05",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-098",
+      "train_number": "BOST-908",
+      "train_service_type": "Steel Coil & Billet Rake (SAIL)",
+      "section_id": "SEC-098",
+      "arrival_time": "02:30",
+      "departure_time": "02:45",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-099",
+      "train_number": "BOXNHL-909",
+      "train_service_type": "Limestone Bulk Rake",
+      "section_id": "SEC-099",
+      "arrival_time": "04:00",
+      "departure_time": "04:15",
+      "priority": 5
+    },
+    {
+      "train_id": "TRN-100",
+      "train_number": "EMPTY-910",
+      "train_service_type": "Empty Freight Rake Relocation",
+      "section_id": "SEC-100",
+      "arrival_time": "05:10",
+      "departure_time": "05:25",
+      "priority": 5
+    }
+  ],
+  "Priority Reference Rules": [
+    {
+      "priority_level": 1,
+      "category_name": "Premium High Speed (PHS)",
+      "eligible_train_classes_types": "Vande Bharat, Rajdhani, Shatabdi, Tejas, Duronto",
+      "precedence_rule": "Absolute Precedence (Green Corridor clearance)",
+      "dispatch_clearance": "Immediate Priority"
+    },
+    {
+      "priority_level": 2,
+      "category_name": "Mail / Superfast (M&E)",
+      "eligible_train_classes_types": "Superfast (SF), Mail, Express, Sampark Kranti, Garib Rath",
+      "precedence_rule": "Precedence over Suburbans & Freight",
+      "dispatch_clearance": "Scheduled Clearance"
+    },
+    {
+      "priority_level": 3,
+      "category_name": "Suburban / Passenger",
+      "eligible_train_classes_types": "EMU, MEMU, DEMU, Ordinary Passenger, MMTS",
+      "precedence_rule": "Fixed Suburban Time-Slot preference",
+      "dispatch_clearance": "Slot-based Priority"
+    },
+    {
+      "priority_level": 4,
+      "category_name": "High-Speed Freight",
+      "eligible_train_classes_types": "CONCOR Container Rakes, Parcel Express (PCET), Auto Trains",
+      "precedence_rule": "Precedence over standard bulk rakes",
+      "dispatch_clearance": "Fast Corridor Clearance"
+    },
+    {
+      "priority_level": 5,
+      "category_name": "Standard Bulk Freight",
+      "eligible_train_classes_types": "BOXN Coal, BOBRN Iron Ore, BCNHL Cement/Food, BTPN POL",
+      "precedence_rule": "Loop line looping allowed for overtaking",
+      "dispatch_clearance": "Regulated Clearance"
+    }
+  ]
+}

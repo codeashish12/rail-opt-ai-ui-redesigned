@@ -1,0 +1,28 @@
+{
+  "Scenarios": [
+    {
+      "sc_002": "SC-003",
+      "emergency_repair": "Power Failure",
+      "sudden_rail_fracture_detected_on_the_track_requiring_immediate_fix": "Overhead Equipment (OHE) line breakdown in the section",
+      "priority_critical_speed_limit_0km_h_duration_minutes_90": "train_type_affected = Electric, delay_time = +120mins, priority = High"
+    },
+    {
+      "sc_002": "SC-004",
+      "emergency_repair": "Mega Block",
+      "sudden_rail_fracture_detected_on_the_track_requiring_immediate_fix": "Planned electronic interlocking and signal upgrade at major junction",
+      "priority_critical_speed_limit_0km_h_duration_minutes_90": "track_status = closed, duration_minutes = 480, reroute = True"
+    },
+    {
+      "sc_002": "SC-005",
+      "emergency_repair": "Weather Restrictions",
+      "sudden_rail_fracture_detected_on_the_track_requiring_immediate_fix": "Dense fog or heavy rainfall causing low visibility on tracks",
+      "priority_critical_speed_limit_0km_h_duration_minutes_90": "speed_limit = 60km/h, arrival_time_buffer = +45mins"
+    },
+    {
+      "sc_002": "SC-006",
+      "emergency_repair": "Resource Shortage",
+      "sudden_rail_fracture_detected_on_the_track_requiring_immediate_fix": "Delay in availability of maintenance crew or machine from previous site",
+      "priority_critical_speed_limit_0km_h_duration_minutes_90": "available_resource = -1, schedule_delay = +60mins"
+    }
+  ]
+}
