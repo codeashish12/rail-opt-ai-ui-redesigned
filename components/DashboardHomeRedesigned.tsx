@@ -201,7 +201,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
           </button>
 
           <button
-            onClick={() => setActive?.("Block Planning")}
+            onClick={() => setActive?.("AI Optimization")}
             className="flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-xs font-semibold text-primary-foreground shadow-sm transition duration-200 motion-safe:hover:-translate-y-0.5 hover:opacity-90 hover:shadow-md motion-safe:active:scale-[0.98]"
           >
             <Sparkles className="size-3.5" />
