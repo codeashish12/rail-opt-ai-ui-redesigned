@@ -1872,20 +1872,52 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
     "Validating feasibility",
     "Calculating operational impact",
   ];
+  const { maintenanceRequests, isLoading } = useMaintenanceRequests();
+  const { setResult } = useOptimizationResult();
   const [completed, setCompleted] = useState(steps.length);
   const [running, setRunning] = useState(false);
-  const start = () => {
+  const [optimizationError, setOptimizationError] = useState("");
+  const start = async () => {
+    if (running || isLoading) return;
+
     setRunning(true);
     setCompleted(0);
-    steps.forEach((_, index) =>
-      window.setTimeout(
-        () => {
-          setCompleted(index + 1);
-          if (index === steps.length - 1) setRunning(false);
-        },
-        420 * (index + 1),
-      ),
-    );
+    setOptimizationError("");
+
+    try {
+      const activeRequests = maintenanceRequests.filter(
+        (request) => request.status !== "Completed",
+      );
+      const selectedSection = activeRequests[0]?.section;
+
+      if (!activeRequests.length || !selectedSection) {
+        throw new Error(
+          "No maintenance requests are available for optimization.",
+        );
+      }
+
+      const result = await runOptimization({
+        planningDate: getTodayDateString(),
+        sectionId: selectedSection,
+        maintenanceRequestIds: activeRequests
+          .filter((request) => request.section === selectedSection)
+          .map((request) => request.id),
+        planningWindow: "24 hours",
+      });
+
+      setResult(normalizeOptimizationResult(result, maintenanceRequests));
+      setCompleted(steps.length);
+    } catch (error) {
+      setResult(null);
+      setCompleted(0);
+      setOptimizationError(
+        error instanceof Error
+          ? error.message
+          : "Optimization failed. Please check the backend.",
+      );
+    } finally {
+      setRunning(false);
+    }
   };
   const done = completed === steps.length && !running;
   return (
@@ -2032,6 +2064,11 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
               </>
             )}
           </button>
+          {optimizationError && (
+            <p className="text-[10px] leading-4 text-destructive">
+              {optimizationError}
+            </p>
+          )}
         </section>
       </div>
 
