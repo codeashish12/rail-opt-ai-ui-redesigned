@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, createElement, useContext, useMemo, useState, type ReactNode } from 'react'
+import { createContext, createElement, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Block, MaintenanceRequest, OptimizationResult } from './types'
 
 export type BackendOptimizationBlock = {
@@ -146,9 +146,37 @@ type OptimizationResultContextValue = {
 }
 
 const OptimizationResultContext = createContext<OptimizationResultContextValue | null>(null)
+const optimizationResultStorageKey = 'railopt-latest-optimization-result'
 
 export function OptimizationResultProvider({ children }: { children: ReactNode }) {
   const [result, setResult] = useState<OptimizationResult | null>(null)
+  const [hydrated, setHydrated] = useState(false)
+
+  useEffect(() => {
+    try {
+      const stored = window.localStorage.getItem(optimizationResultStorageKey)
+      if (stored) {
+        setResult(JSON.parse(stored) as OptimizationResult)
+      }
+    } catch {
+      window.localStorage.removeItem(optimizationResultStorageKey)
+    } finally {
+      setHydrated(true)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!hydrated) return
+
+    if (result) {
+      window.localStorage.setItem(
+        optimizationResultStorageKey,
+        JSON.stringify(result),
+      )
+    } else {
+      window.localStorage.removeItem(optimizationResultStorageKey)
+    }
+  }, [hydrated, result])
 
   const value = useMemo<OptimizationResultContextValue>(
     () => ({
