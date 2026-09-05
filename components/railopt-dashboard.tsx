@@ -1883,6 +1883,7 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
     setRunning(true);
     setCompleted(0);
     setOptimizationError("");
+    let progressTimer: ReturnType<typeof window.setInterval> | undefined;
 
     try {
       const activeRequests = maintenanceRequests.filter(
@@ -1896,18 +1897,30 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
         );
       }
 
-      const result = await runOptimization({
-        planningDate: getTodayDateString(),
-        sectionId: selectedSection,
-        maintenanceRequestIds: activeRequests
-          .filter((request) => request.section === selectedSection)
-          .map((request) => request.id),
-        planningWindow: "24 hours",
+      const animationComplete = new Promise<void>((resolve) => {
+        progressTimer = window.setInterval(() => {
+          setCompleted((current) => {
+            const next = Math.min(current + 1, steps.length);
+            if (next === steps.length && progressTimer) {
+              window.clearInterval(progressTimer);
+              resolve();
+            }
+            return next;
+          });
+        }, 420);
       });
 
+      const resultPromise = runOptimization({
+        planningDate: getTodayDateString(),
+        sectionId: selectedSection,
+        maintenanceRequestIds: activeRequests.map((request) => request.id),
+        planningWindow: "24 hours",
+      });
+      const result = await resultPromise;
+      await animationComplete;
       setResult(normalizeOptimizationResult(result, maintenanceRequests));
-      setCompleted(steps.length);
     } catch (error) {
+      if (progressTimer) window.clearInterval(progressTimer);
       setResult(null);
       setCompleted(0);
       setOptimizationError(
