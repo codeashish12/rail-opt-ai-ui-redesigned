@@ -214,7 +214,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6">
         <RailKpi
           label="Maintenance Requests"
-          value={isLoading ? "—" : String(maintenanceRequests.length)}
+          value={isLoading ? "—" : String(activeRequests.length)}
           change={`${urgentRequests.length} urgent / high priority`}
           status={urgentRequests.length ? "warning" : "default"}
           className="motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-md"
@@ -246,7 +246,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
         />
         <RailKpi
           label="Maintenance Jobs"
-          value={String(activeRequests.length)}
+          value={String(maintenanceJobs)}
           change={`${maintenanceCompletion}% approved`}
           status="default"
           className="motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-md"

@@ -75,6 +75,15 @@ const priorityClass: Record<string, string> = {
   Low: "bg-muted text-muted-foreground",
 };
 
+const formatPlanningDate = () => {
+  const [year, month, day] = getTodayDateString().split("-").map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
+};
+
 function Shell({
   active,
   setActive,
@@ -183,7 +192,7 @@ function Shell({
           <div className="flex items-center gap-2">
             <button className="hidden items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs text-muted-foreground sm:flex">
               <CalendarDays className="size-3.5" />
-              Today, 18 Jun 2024
+              Today, {formatPlanningDate()}
               <ChevronDown className="size-3" />
             </button>
             <button className="hidden items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs text-muted-foreground md:flex">
@@ -457,6 +466,9 @@ function DashboardHome() {
 
 function MaintenanceRequests() {
   const { maintenanceRequests, isLoading, error } = useMaintenanceRequests();
+  const activeRequests = maintenanceRequests.filter(
+    (request) => request.status !== "Completed",
+  );
   const [query, setQuery] = useState("");
   const [department, setDepartment] = useState("All departments");
   const [section, setSection] = useState("All sections");
@@ -547,25 +559,32 @@ function MaintenanceRequests() {
       <div className="mb-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <RailKpi
           label="Open maintenanceRequests"
-          value="18"
-          change="6 urgent or high"
+          value={String(activeRequests.length)}
+          change={`${activeRequests.filter((request) => request.priority === "Urgent" || request.priority === "High").length} urgent or high`}
           status="warning"
         />
         <RailKpi
           label="Overdue"
-          value="02"
+          value={String(
+            activeRequests.filter((request) => request.overdue).length,
+          ).padStart(2, "0")}
           change="Requires action"
           status="error"
         />
         <RailKpi
           label="Approved"
-          value="11"
-          change="61% of maintenanceRequests"
+          value={String(
+            activeRequests.filter((request) => request.status === "Approved")
+              .length,
+          )}
+          change={`${activeRequests.length ? Math.round((activeRequests.filter((request) => request.status === "Approved").length / activeRequests.length) * 100) : 0}% of maintenanceRequests`}
           status="success"
         />
         <RailKpi
           label="Resource conflicts"
-          value="02"
+          value={String(
+            activeRequests.filter((request) => request.conflict).length,
+          ).padStart(2, "0")}
           change="Needs reassignment"
           status="error"
         />
@@ -872,7 +891,7 @@ function TrainOperations() {
           </p>
         </div>
         <button className="flex items-center justify-center gap-2 rounded-md border border-border px-4 py-2.5 text-xs font-semibold hover:bg-muted">
-          <CalendarDays className="size-3.5" /> 18 Jun 2024{" "}
+          <CalendarDays className="size-3.5" /> {formatPlanningDate()}{" "}
           <ChevronDown className="size-3" />
         </button>
       </div>
@@ -1312,7 +1331,7 @@ function ResourceManagement() {
                 Resource utilization
               </h3>
               <p className="mt-1 text-xs text-muted-foreground">
-                Current load by operating window . 18 Jun 2024
+                Current load by operating window · {formatPlanningDate()}
               </p>
             </div>
             <span className="rounded bg-primary/10 px-2 py-1 text-[10px] font-semibold text-primary">
@@ -1873,7 +1892,7 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
     "Calculating operational impact",
   ];
   const { maintenanceRequests, isLoading } = useMaintenanceRequests();
-  const { setResult } = useOptimizationResult();
+  const { result, setResult } = useOptimizationResult();
   const [completed, setCompleted] = useState(steps.length);
   const [running, setRunning] = useState(false);
   const [optimizationError, setOptimizationError] = useState("");
@@ -2041,17 +2060,25 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
           </div>
           <div className="grid grid-cols-3 gap-2 text-center text-xs">
             <div className="rounded border border-border p-3">
-              <p className="font-mono text-lg font-semibold">18</p>
+              <p className="font-mono text-lg font-semibold">
+                {maintenanceRequests.length
+                  ? maintenanceRequests.filter(
+                      (request) => request.status !== "Completed",
+                    ).length
+                  : "—"}
+              </p>
               <p className="mt-1 text-[10px] text-muted-foreground">Requests</p>
             </div>
             <div className="rounded border border-border p-3">
-              <p className="font-mono text-lg font-semibold">42</p>
+              <p className="font-mono text-lg font-semibold">{trains.length}</p>
               <p className="mt-1 text-[10px] text-muted-foreground">
                 Movements
               </p>
             </div>
             <div className="rounded border border-border p-3">
-              <p className="font-mono text-lg font-semibold">06</p>
+              <p className="font-mono text-lg font-semibold">
+                {result?.metrics.trainConflicts ?? 0}
+              </p>
               <p className="mt-1 text-[10px] text-muted-foreground">
                 Conflicts
               </p>
