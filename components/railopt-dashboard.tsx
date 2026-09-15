@@ -1902,7 +1902,7 @@ function AIOptimization({ setActive }: { setActive?: (s: string) => void }) {
     setRunning(true);
     setCompleted(0);
     setOptimizationError("");
-    let progressTimer: ReturnType<typeof window.setInterval> | undefined;
+    let progressTimer: number | undefined;
 
     try {
       const activeRequests = maintenanceRequests.filter(
