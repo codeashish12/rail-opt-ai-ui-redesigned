@@ -238,7 +238,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
           className="motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-md"
         />
         <RailKpi
-          label="Blocks Scheduled"
+          label="Blocks in Current Plan"
           value={String(totalBlocks)}
           change={
             result ? "Live optimizer result" : "Generate a plan to populate"
@@ -265,7 +265,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
           className="motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-md"
         />
         <RailKpi
-          label="Maintenance Jobs"
+          label="Jobs in Current Plan"
           value={String(maintenanceJobs)}
           change={`${maintenanceCompletion}% approved`}
           status="default"
