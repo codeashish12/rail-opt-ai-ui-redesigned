@@ -16,6 +16,12 @@ type MaintenanceRecord = {
 
 const priorityMap: Record<number, MaintenanceRequest['priority']> = { 1: 'Urgent', 2: 'High', 3: 'Medium', 4: 'Low' }
 const formatDuration = (minutes: number) => `${Math.floor(minutes / 60)}h${minutes % 60 ? ` ${minutes % 60}m` : ''}`
+const isOverdue = (deadline: string, status: MaintenanceRequest['status']) => {
+  if (!deadline || status === 'Completed') return false
+
+  const timestamp = new Date(deadline.replace(' ', 'T')).getTime()
+  return Number.isFinite(timestamp) && timestamp < Date.now()
+}
 const normalizeStatus = (status?: string): MaintenanceRequest['status'] => {
   if (status === 'Approved' || status === 'Pending' || status === 'In Progress' || status === 'Completed') return status
   return 'Pending'
@@ -43,7 +49,7 @@ export function normalizeMaintenanceRequests(records: unknown): MaintenanceReque
       deadline: item.execution_deadline ?? '',
       resource: item.required_resource_equipment ?? '',
       status: normalizeStatus(item.approval_status),
-      overdue: false,
+      overdue: isOverdue(item.execution_deadline ?? '', status),
       conflict: '',
     }]
   })

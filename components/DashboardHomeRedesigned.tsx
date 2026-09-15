@@ -84,7 +84,9 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
     (request) => request.status !== "Completed",
   );
   const urgentRequests = maintenanceRequests.filter(
-    (request) => request.priority === "Urgent" || request.priority === "High",
+    (request) =>
+      request.status !== "Completed" &&
+      (request.priority === "Urgent" || request.priority === "High"),
   );
 
   const resultMetrics = result?.metrics;
