@@ -114,7 +114,7 @@ function Shell({
           </div>
           <div>
             <div className="font-mono text-sm font-bold tracking-tight text-sidebar-foreground">
-              RailOpt <span className="text-primary">AI</span>
+              TrackSetu
             </div>
             <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
               Operations platform
@@ -3889,7 +3889,7 @@ function Reports() {
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
             A clear operational summary built only from the records currently
-            loaded into RailOpt AI.
+            loaded into TrackSetu.
           </p>
         </div>
         <button className="flex items-center justify-center gap-2 rounded-md border border-border px-4 py-2.5 text-xs font-semibold hover:bg-muted">
