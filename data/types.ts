@@ -84,6 +84,7 @@ export interface OptimizationResult {
   metrics: {
     totalBlocks: number
     blockHours: number
+    blockUtilization: number
     trainConflicts: number
     resourceConflicts: number
     maintenanceCompletion: number

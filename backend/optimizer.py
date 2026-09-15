@@ -846,6 +846,17 @@ def optimize(input_data: OptimizationInput) -> OptimizationResponse:
     )
 
     completed = len(blocks)
+    optimized_sections = {
+        block["section_id"] for block in blocks if block.get("section_id")
+    }
+    block_utilization = (
+        min(
+            100,
+            total_minutes / (horizon * len(optimized_sections)) * 100,
+        )
+        if optimized_sections
+        else 0
+    )
 
     baseline_asset_availability = (
         _resource_availability(
@@ -886,6 +897,10 @@ def optimize(input_data: OptimizationInput) -> OptimizationResponse:
             "total_blocks": completed,
             "total_block_hours": round(
                 total_minutes / 60,
+                2,
+            ),
+            "block_utilization_percent": round(
+                block_utilization,
                 2,
             ),
             "completed_tasks": completed,

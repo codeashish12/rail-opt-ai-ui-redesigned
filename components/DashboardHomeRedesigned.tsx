@@ -119,6 +119,9 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
 
   const selected =
     sections.find((section) => section.id === selectedSection) ?? sections[0];
+  const blockUtilization = result
+    ? (resultMetrics?.blockUtilization ?? 0)
+    : (selected?.utilization ?? 0);
 
   const selectedTrains = useMemo(
     () => trains.filter((train) => train.section === selected?.id),
@@ -245,8 +248,10 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
         />
         <RailKpi
           label="Block Utilization"
-          value={`${selected?.utilization ?? 0}%`}
-          change="Across tracked sections"
+          value={`${blockUtilization}%`}
+          change={
+            result ? "Optimizer planning occupancy" : "Across tracked sections"
+          }
           status={
             selected && selected.utilization >= 85 ? "warning" : "success"
           }

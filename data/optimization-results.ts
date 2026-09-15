@@ -84,6 +84,7 @@ export function normalizeOptimizationMetrics(
 
   const totalBlocks = Number(source.total_blocks ?? source.totalBlocks ?? 0)
   const blockHours = Number(source.total_block_hours ?? source.blockHours ?? 0)
+  const blockUtilization = Number(source.block_utilization_percent ?? source.blockUtilization ?? 0)
   const trainConflicts = Number(source.train_conflicts ?? source.trainConflicts ?? 0)
   const resourceConflicts = Number(source.resource_conflicts ?? source.resourceConflicts ?? 0)
   const maintenanceCompletion = Number(source.maintenance_completion_percent ?? source.maintenanceCompletion ?? 0)
@@ -107,6 +108,7 @@ export function normalizeOptimizationMetrics(
   return {
     totalBlocks: Number.isFinite(totalBlocks) ? totalBlocks : 0,
     blockHours: Number.isFinite(blockHours) ? blockHours : 0,
+    blockUtilization: Number.isFinite(blockUtilization) ? blockUtilization : 0,
     trainConflicts: Number.isFinite(trainConflicts) ? trainConflicts : 0,
     resourceConflicts: Number.isFinite(resourceConflicts) ? resourceConflicts : 0,
     maintenanceCompletion: Number.isFinite(maintenanceCompletion) ? maintenanceCompletion : 0,
