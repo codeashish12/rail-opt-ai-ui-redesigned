@@ -11,13 +11,8 @@ import {
   scenarios,
   activeTrains,
   activeConflicts,
-  assetAvailability,
-  maintenanceCompletion,
-  plannedBlocks,
-  totalBlockHours,
   totalMaintenanceRequests,
   totalResources,
-  trainConflicts,
 } from "@/data";
 import { useMaintenanceRequests } from "@/data/use-maintenance-requests";
 import {
@@ -1335,7 +1330,7 @@ function ResourceManagement() {
               </p>
             </div>
             <span className="rounded bg-primary/10 px-2 py-1 text-[10px] font-semibold text-primary">
-              73% network average
+              {averageUtilization}% network average
             </span>
           </div>
           <div className="p-5">
@@ -1591,26 +1586,29 @@ function RailwayNetwork() {
       <div className="mb-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <RailKpi
           label="Stations tracked"
-          value="126"
-          change="124 operational"
+          value={String(stations.length)}
+          change={`${stations.filter((station) => station.status === "Operational").length} operational`}
           status="success"
         />
         <RailKpi
           label="Sections"
-          value="84"
-          change="5 under restriction"
+          value={String(sections.length)}
+          change={`${sections.filter((section) => section.status !== "Available").length} under restriction`}
           status="warning"
         />
         <RailKpi
           label="Network availability"
-          value="96.2%"
-          change="+1.8% this week"
+          value={`${sections.length ? Math.round((sections.filter((section) => section.status === "Available").length / sections.length) * 1000) / 10 : 0}%`}
+          change="Current section availability"
           status="success"
         />
         <RailKpi
           label="Active corridors"
-          value="18"
-          change="2 in maintenance"
+          value={String(
+            sections.filter((section) => section.status !== "Maintenance")
+              .length,
+          )}
+          change={`${sections.filter((section) => section.status === "Maintenance").length} in maintenance`}
           status="default"
         />
       </div>
@@ -2601,41 +2599,54 @@ function BlockPlanning({ setActive }: { setActive?: (s: string) => void }) {
                 )}
               </div>
               <div className="flex flex-col gap-3">
-                {movements.map(([start, end, train, route, color]) => (
-                  <div key={train} className="flex items-center gap-3">
-                    <div className="w-21 shrink-0">
-                      <p className="font-mono text-[10px] font-semibold text-primary">
-                        {train}
-                      </p>
-                      <p className="truncate text-[9px] text-muted-foreground">
-                        {route}
-                      </p>
+                {movements.map(([start, end, train, route, color]) => {
+                  const movementStart = timeToMinutes(start);
+                  const movementDuration = Math.max(
+                    5,
+                    timeToMinutes(end) - movementStart,
+                  );
+
+                  return (
+                    <div key={train} className="flex items-center gap-3">
+                      <div className="w-21 shrink-0">
+                        <p className="font-mono text-[10px] font-semibold text-primary">
+                          {train}
+                        </p>
+                        <p className="truncate text-[9px] text-muted-foreground">
+                          {route}
+                        </p>
+                      </div>
+                      <div className="relative h-9 min-w-0 flex-1 rounded bg-muted/35">
+                        <div
+                          className={`absolute inset-y-1 left-[18%] w-[24%] rounded ${color}`}
+                          style={{
+                            left: `${(movementStart / 1440) * 100}%`,
+                            width: `${(movementDuration / 1440) * 100}%`,
+                          }}
+                        />
+                        <span className="absolute left-[20%] top-1/2 -translate-y-1/2 text-[9px] font-semibold text-primary-foreground">
+                          {start}-{end}
+                        </span>
+                      </div>
                     </div>
-                    <div className="relative h-9 min-w-0 flex-1 rounded bg-muted/35">
-                      <div
-                        className={`absolute inset-y-1 left-[18%] w-[24%] rounded ${color}`}
-                      />
-                      <div className="absolute inset-y-1 left-[52%] w-[13%] rounded bg-muted-foreground/20" />
-                      <div className="absolute inset-y-1 left-[72%] w-[18%] rounded bg-accent/80" />
-                      <span className="absolute left-[20%] top-1/2 -translate-y-1/2 text-[9px] font-semibold text-primary-foreground">
-                        {start}-{end}
-                      </span>
-                    </div>
+                  );
+                })}
+              </div>
+              {conflicts.length > 0 && (
+                <div className="mt-5 flex items-center gap-3 rounded-md border border-accent/40 bg-accent/10 p-3">
+                  <AlertTriangle className="size-4 shrink-0 text-accent" />
+                  <div>
+                    <p className="text-xs font-semibold text-accent">
+                      {conflicts.length} protected movement conflict
+                      {conflicts.length === 1 ? "" : "s"} detected
+                    </p>
+                    <p className="mt-1 text-[10px] leading-4 text-muted-foreground">
+                      Review the selected maintenance window against the
+                      protected train movements above.
+                    </p>
                   </div>
-                ))}
-              </div>
-              <div className="mt-5 flex items-center gap-3 rounded-md border border-accent/40 bg-accent/10 p-3">
-                <AlertTriangle className="size-4 shrink-0 text-accent" />
-                <div>
-                  <p className="text-xs font-semibold text-accent">
-                    Conflict window detected . 09:00-10:30
-                  </p>
-                  <p className="mt-1 text-[10px] leading-4 text-muted-foreground">
-                    MR-2847 overlaps protected movement IC 204. AI will seek the
-                    next safe possession window.
-                  </p>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </section>
@@ -3175,6 +3186,7 @@ function safeMetricNumber(value: unknown, fallback: number): number {
 
 function WhatIfSimulation() {
   const { maintenanceRequests, isLoading } = useMaintenanceRequests();
+  const { result: latestResult } = useOptimizationResult();
 
   const [traffic, setTraffic] = useState("+20%");
   const [delay, setDelay] = useState("Minor");
@@ -3290,11 +3302,21 @@ function WhatIfSimulation() {
    * an optimized plan and can make the scenario delta misleading.
    */
   const baselineNumbers = {
-    blockHours: safeMetricNumber(totalBlockHours, 31.8),
-    blocks: safeMetricNumber(plannedBlocks, 14),
-    trainConflicts: safeMetricNumber(trainConflicts, 2),
-    completion: safeMetricNumber(maintenanceCompletion, 94),
-    assetAvailability: safeMetricNumber(assetAvailability, 96.8),
+    blockHours: latestResult?.metrics.blockHours ?? 0,
+    blocks: latestResult?.metrics.totalBlocks ?? 0,
+    trainConflicts: latestResult?.metrics.trainConflicts ?? 0,
+    completion: latestResult?.metrics.maintenanceCompletion ?? 0,
+    assetAvailability:
+      latestResult?.metrics.assetAvailability ??
+      (resources.length
+        ? Math.round(
+            (resources.filter(
+              (resource) => resource.availability === "Available",
+            ).length /
+              resources.length) *
+              100,
+          )
+        : 0),
   };
 
   const scenarioNumbers = scenarioResult

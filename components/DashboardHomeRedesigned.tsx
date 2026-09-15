@@ -90,7 +90,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
   const resultMetrics = result?.metrics;
   const blocks = result?.blocks ?? [];
   const totalBlocks = resultMetrics?.totalBlocks ?? blocks.length;
-  const maintenanceJobs = resultMetrics?.totalTasks ?? activeRequests.length;
+  const maintenanceJobs = result ? (resultMetrics?.totalTasks ?? 0) : 0;
   const blockHours = resultMetrics?.blockHours ?? 0;
   const trainConflicts = resultMetrics?.trainConflicts ?? 0;
   const maintenanceCompletion =
@@ -123,49 +123,62 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
     [selected?.id],
   );
 
-  const recommendedRequest = activeRequests[0];
+  const recommendedBlock = blocks[0];
+  const recommendedRequest = activeRequests.find((request) =>
+    recommendedBlock?.tasks.split(", ").includes(request.id),
+  );
   const recommendedSection =
-    sections.find((section) => section.id === recommendedRequest?.section) ??
+    sections.find((section) => section.id === recommendedBlock?.section) ??
     selected;
 
-  const upcomingBlocks = blocks.length
-    ? blocks.slice(0, 3).map((block) => ({
-        id: block.id,
-        section: block.section,
-        time: block.time,
-        tasks: block.tasks,
-        resources: block.resources,
-      }))
-    : [
-        {
-          id: "BLK-DEMO",
-          section: recommendedSection?.id ?? "A-14",
-          time: "02:10–03:25",
-          tasks: recommendedRequest ? recommendedRequest.id : "Maintenance",
-          resources: recommendedRequest?.resource ?? "Resource pending",
-        },
-      ];
+  const upcomingBlocks = blocks.slice(0, 3).map((block) => ({
+    id: block.id,
+    section: block.section,
+    time: block.time,
+    tasks: block.tasks,
+    resources: block.resources,
+  }));
 
-  const timelineRows = sections.map((section, index) => {
-    const sectionTrains = trains.filter(
-      (train) => train.section === section.id,
-    );
-    const first = sectionTrains[0];
-    const start = first ? timeToMinutes(first.arrival) : 60 + index * 70;
-    const duration = Math.max(
-      55,
-      first
-        ? timeToMinutes(first.departure) - timeToMinutes(first.arrival)
-        : 75,
-    );
-    return {
-      section,
-      start,
-      duration,
-      label: `${section.from} — ${section.to}`,
-      trainCount: sectionTrains.length,
-    };
-  });
+  const timelineRows =
+    result && blocks.length
+      ? blocks.map((block) => {
+          const [startValue, endValue] = block.time.split("→");
+          const start = timeToMinutes(startValue?.trim() ?? "");
+          const end = timeToMinutes(endValue?.trim() ?? "");
+          const section = sections.find((item) => item.id === block.section);
+          const trainCount =
+            block.trains === "—"
+              ? 0
+              : block.trains.split(", ").filter(Boolean).length;
+
+          return {
+            section,
+            start,
+            duration: Math.max(5, end - start),
+            label: section ? `${section.from} — ${section.to}` : block.section,
+            trainCount,
+          };
+        })
+      : sections.map((section) => {
+          const sectionTrains = trains.filter(
+            (train) => train.section === section.id,
+          );
+          const first = sectionTrains[0];
+          const start = first ? timeToMinutes(first.arrival) : 0;
+          const duration = Math.max(
+            5,
+            first
+              ? timeToMinutes(first.departure) - timeToMinutes(first.arrival)
+              : 0,
+          );
+          return {
+            section,
+            start,
+            duration,
+            label: `${section.from} — ${section.to}`,
+            trainCount: sectionTrains.length,
+          };
+        });
 
   return (
     <div
@@ -404,7 +417,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
               <p className="mt-4 font-mono text-3xl font-semibold tracking-tight">
                 {upcomingBlocks[0]?.time
                   ? formatBlockTime(upcomingBlocks[0].time)
-                  : "—"}
+                  : "No optimized block"}
               </p>
 
               <div className="mt-4 grid grid-cols-2 gap-4">
@@ -413,8 +426,9 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
                     Location
                   </p>
                   <p className="mt-1 text-xs font-semibold">
-                    {recommendedSection?.from ?? "—"} —{" "}
-                    {recommendedSection?.to ?? "—"}
+                    {recommendedSection && recommendedBlock
+                      ? `${recommendedSection.from} — ${recommendedSection.to}`
+                      : "—"}
                   </p>
                 </div>
                 <div>
@@ -431,12 +445,8 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
                 [
                   "Jobs",
                   String(
-                    Math.max(
-                      1,
-                      activeRequests.length
-                        ? Math.min(4, activeRequests.length)
-                        : 1,
-                    ),
+                    recommendedBlock?.tasks.split(", ").filter(Boolean)
+                      .length ?? 0,
                   ),
                   Wrench,
                 ],
@@ -514,7 +524,7 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
 
                   return (
                     <div
-                      key={row.section.id}
+                      key={`${row.label}-${row.start}`}
                       className="flex items-center gap-3"
                     >
                       <div className="w-37 shrink-0">
@@ -522,7 +532,8 @@ export function DashboardHomeRedesigned({ setActive }: Props) {
                           {row.label}
                         </p>
                         <p className="mt-1 text-[9px] text-muted-foreground">
-                          {row.section.id} · {row.trainCount} trains
+                          {row.section?.id ?? "Optimizer block"} ·{" "}
+                          {row.trainCount} trains
                         </p>
                       </div>
 
